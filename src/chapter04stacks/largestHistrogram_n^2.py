@@ -10,4 +10,4 @@ def largestHistrogram(A):
 
 
 A = [6, 2, 5, 4, 5, 1, 6] 
-print "largestRectangleArea: ", largestHistrogram(A)
+print("largestRectangleArea: ", largestHistrogram(A))

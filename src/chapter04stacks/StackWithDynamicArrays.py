@@ -20,18 +20,18 @@ class Stack(object):
 		if len(self.stk) >= self.limit:
 			self.resize()
 		self.stk.append(item)
-		print 'Stack after Push', self.stk
+		print('Stack after Push', self.stk)
 
 	def pop(self):
 		if len(self.stk) <= 0:
-			print 'Stack Underflow!'
+			print('Stack Underflow!')
 			return 0
 		else:
 			return self.stk.pop()
 			
 	def peek(self):
 		if len(self.stk) <= 0:
-			print 'Stack Underflow!'
+			print('Stack Underflow!')
 			return 0
 		else:
 			return self.stk[-1]
@@ -56,7 +56,7 @@ our_stack.push("19")
 our_stack.push("3")
 our_stack.push("99")
 our_stack.push("9")
-print our_stack.peek()
-print our_stack.pop()
-print our_stack.peek()
-print our_stack.pop()
+print(our_stack.peek())
+print(our_stack.pop())
+print(our_stack.peek())
+print(our_stack.pop())

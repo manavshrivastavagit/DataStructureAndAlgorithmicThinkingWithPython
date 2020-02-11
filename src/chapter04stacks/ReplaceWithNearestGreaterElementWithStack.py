@@ -40,7 +40,7 @@ def replaceWithNearestGreaterElementWithStack(A):
 		if not S.isEmpty():
 			element = S.pop()
 			while (element < nextNearestGreater):
-				print("For the element " + str(element) + ", " + str(nextNearestGreater) + " is the nearest greater element")
+				print(("For the element " + str(element) + ", " + str(nextNearestGreater) + " is the nearest greater element"))
 				if S.isEmpty():
 					break
 				element = S.pop()
@@ -51,5 +51,5 @@ def replaceWithNearestGreaterElementWithStack(A):
 	while (not S.isEmpty()):
 		element = S.pop()
 		nextNearestGreater = float("-inf")
-		print("For the element " + str(element) + ", " + str(nextNearestGreater) + " is the nearest greater element")
+		print(("For the element " + str(element) + ", " + str(nextNearestGreater) + " is the nearest greater element"))
 replaceWithNearestGreaterElementWithStack([6, 12, 4, 1, 2, 111, 2, 2, 10])

@@ -21,4 +21,4 @@ def separateZerosAndOnes(A):
 			right -= 1
 A = [1, 1, 0, 0, 1, 0, 1]
 separateZerosAndOnes(A)
-print A
+print(A)

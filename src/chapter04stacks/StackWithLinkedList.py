@@ -25,10 +25,10 @@ class Node:
         self.next = next
        # method for getting the next field of the node    
     def get_next(self):
-        return self.next
+        return self.__next__
     # returns true if the node points to another node
     def has_next(self):
-            return self.next != None
+            return self.__next__ != None
 	    
 class Stack(object):
     def __init__(self, data=None):
@@ -58,8 +58,8 @@ class Stack(object):
 
 our_list = ["first", "second", "third", "fourth"]
 our_stack = Stack(our_list)
-print our_stack.pop()
-print our_stack.peek()
-print our_stack.pop()
-print our_stack.peek()
-print our_stack.pop()
+print(our_stack.pop())
+print(our_stack.peek())
+print(our_stack.pop())
+print(our_stack.peek())
+print(our_stack.pop())

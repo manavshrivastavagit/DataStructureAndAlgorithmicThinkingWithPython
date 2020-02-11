@@ -26,10 +26,10 @@ class Node:
         self.next = next
     # method for getting the next field of the node    
     def get_next(self):
-        return self.next
+        return self.__next__
     # returns true if the node points to another node
     def has_next(self):
-            return self.next != None
+            return self.__next__ != None
     # method for setting the next field of the node
     def setPrev(self, prev):
         self.prev = prev
@@ -55,16 +55,16 @@ class DoubleLinkedList:
             self.tail = self.head
         else:
             current = self.head
-            while(current.next != None):
-                current = current.next
+            while(current.__next__ != None):
+                current = current.__next__
             current.next = Node(data, None, current)
-            self.tail = current.next
+            self.tail = current.__next__
 
     def delete(self, data):
         current = self.head
         # If given item is the first element of the linked list
         if current.data == data:
-            self.head = current.next
+            self.head = current.__next__
             self.head.prev = None
             return True
         
@@ -81,10 +81,10 @@ class DoubleLinkedList:
         # If the element is absent or in the middle of the linked list
         while current != None:
             if current.data == data :
-                current.prev.next = current.next
+                current.prev.next = current.__next__
                 current.next.prev = current.prev
                 return True
-            current = current.next
+            current = current.__next__
      
         # The element is absent
         return False
@@ -131,7 +131,7 @@ class DoubleLinkedList:
         while current != None:
             if current.data == data :
                 return True
-            current = current.next
+            current = current.__next__
         return False
 
     def fwd_print(self):
@@ -140,8 +140,8 @@ class DoubleLinkedList:
             print("No elements")
             return False
         while (current != None):
-            print (current.data) 
-            current = current.next
+            print((current.data)) 
+            current = current.__next__
         return True
 
     def rev_print(self):
@@ -151,7 +151,7 @@ class DoubleLinkedList:
             return False
 
         while (current != None):
-            print (current.data)
+            print((current.data))
             current = current.prev
         return True
 

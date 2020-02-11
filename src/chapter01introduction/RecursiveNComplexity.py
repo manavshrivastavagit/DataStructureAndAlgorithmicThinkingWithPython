@@ -19,7 +19,7 @@ def function(n):
 		count = count + 1
 	n = n // 2;
 	function(n)
-	print count
+	print(count)
 
 function(200)
 

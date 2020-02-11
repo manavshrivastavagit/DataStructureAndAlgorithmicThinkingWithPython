@@ -23,5 +23,5 @@ def moveSpacesToEnd(A):
 	A = ''.join(datalist)
 	return A
 A = "move these spaces to beginning"
-print A, "\n", moveSpacesToEnd(A)
+print(A, "\n", moveSpacesToEnd(A))
 

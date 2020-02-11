@@ -14,4 +14,4 @@ def Fibo(n):
       fibTable.append(fibTable[i - 1] + fibTable[i - 2])
    return fibTable[n]
    
-print(Fibo(10))   
+print((Fibo(10)))   

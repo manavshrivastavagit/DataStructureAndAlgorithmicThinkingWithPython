@@ -36,6 +36,6 @@ def exchangeEvenOddList(head):
 					# inserting the node at the end of linked list
 					oddListEnd.next = itr                          
 					oddListEnd = itr
-		itr = itr.next
+		itr = itr.__next__
 	evenListEnd.next = oddList
 	return head

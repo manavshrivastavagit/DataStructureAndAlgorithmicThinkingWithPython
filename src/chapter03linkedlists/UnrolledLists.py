@@ -47,7 +47,7 @@ def searchElements(blockHead, k):
 	p = blockHead
 	j -= 1
 	while(j):
-		p = p.next 
+		p = p.__next__ 
 		j -= 1
 
 	fLinkedBlock = p
@@ -60,7 +60,7 @@ def searchElements(blockHead, k):
 	k = p.nodeCount + 1 - k
 	k -= 1
 	while (k):
-		q = q.next
+		q = q.__next__
 		k -= 1
 
 	fNode = q
@@ -72,20 +72,20 @@ def shift(A):
 	B = A
 	global blockHead	
 	while(A.nodeCount > blockSize):  # if this block still have to shift
-		if(A.next == None):  # reach the end. A little different
+		if(A.__next__ == None):  # reach the end. A little different
 			A.next = newLinkedBlock()
-			B = A.next
-			temp = A.head.next
-			A.head.next = A.head.next.next
+			B = A.__next__
+			temp = A.head.__next__
+			A.head.next = A.head.next.__next__
 			B.head = temp
 			temp.next = temp
 			A.nodeCount -= 1
 			B.nodeCount += 1
 		else:
-			B = A.next
-			temp = A.head.next			
-			A.head.next = A.head.next.next	
-			temp.next = B.head.next	
+			B = A.__next__
+			temp = A.head.__next__			
+			A.head.next = A.head.next.__next__	
+			temp.next = B.head.__next__	
 			B.head.next = temp		
 			B.head = temp
 			A.nodeCount -= 1			
@@ -106,17 +106,17 @@ def addElement(k, x):
 	else:
 		if(k == 0):  # special case for k=0. 
 			p = blockHead.head
-			q = p.next
+			q = p.__next__
 			p.next = newNode(x)
 			p.next.next = q
-			blockHead.head = p.next
+			blockHead.head = p.__next__
 			blockHead.nodeCount += 1
 			shift(blockHead)
 		else:
 			r, p = searchElements(blockHead, k)
 			q = p
-			while(q.next != p):
-				q = q.next
+			while(q.__next__ != p):
+				q = q.__next__
 			q.next = newNode(x)
 			q.next.next = p
 			r.nodeCount += 1

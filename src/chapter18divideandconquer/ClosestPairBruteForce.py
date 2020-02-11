@@ -23,4 +23,4 @@ def bruteMin(points, current=float("inf")):
     return bruteMin(points, newCurrent)
 
 A = [(12, 30), (40, 50), (5, 1), (12, 10), (3, 4)]
-print bruteMin(A)
+print(bruteMin(A))

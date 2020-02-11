@@ -18,19 +18,19 @@ class OptimalBinarySearchTree(BSTNode):  # For BSTNode, refer Trees chapter
 
     def optimalBST(self):
         n = len(self.keys) + 1
-        root_matrix = [[0 for i in xrange(n)] for j in xrange(n)]
-        probabilitiesSumMatrix = [[0 for i in xrange(n)] for j in xrange(n)]
-        expectedCostMatrix = [[99999 for i in xrange(n)] for j in xrange(n)]
-        for i in xrange(1, n):
+        root_matrix = [[0 for i in range(n)] for j in range(n)]
+        probabilitiesSumMatrix = [[0 for i in range(n)] for j in range(n)]
+        expectedCostMatrix = [[99999 for i in range(n)] for j in range(n)]
+        for i in range(1, n):
             probabilitiesSumMatrix[i][i - 1] = self.dummyProbabilities[i - 1]
             expectedCostMatrix[i][i - 1] = self.dummyProbabilities[i - 1]
 
-        for l in xrange(1, n):
-            for i in xrange(1, n - l):
+        for l in range(1, n):
+            for i in range(1, n - l):
                 j = i + l - 1
                 expectedCostMatrix[i][j] = 99999
                 probabilitiesSumMatrix[i][j] = probabilitiesSumMatrix[i][j - 1] + self.probabilities[j] + self.dummyProbabilities[j]
-                for r in xrange(i, j + 1):
+                for r in range(i, j + 1):
                     t = expectedCostMatrix[i][r - 1] + expectedCostMatrix[r + 1][j] + probabilitiesSumMatrix[i][j]
                     if t < expectedCostMatrix[i][j]:
                         expectedCostMatrix[i][j] = t

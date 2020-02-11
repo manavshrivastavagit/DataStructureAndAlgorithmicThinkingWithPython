@@ -14,7 +14,7 @@ class Vertex:
         self.id = node
         self.adjacent = {}
         # Set distance to infinity for all nodes
-        self.distance = sys.maxint - 10
+        self.distance = sys.maxsize - 10
         # Mark all nodes unvisited        
         self.visited = False  
         # Predecessor
@@ -24,7 +24,7 @@ class Vertex:
         self.adjacent[neighbor] = weight
 
     def getConnections(self):
-        return self.adjacent.keys()  
+        return list(self.adjacent.keys())  
 
     def getVertexID(self):
         return self.id
@@ -53,7 +53,7 @@ class Graph:
         self.numVertices = 0
 
     def __iter__(self):
-        return iter(self.vertDictionary.values())
+        return iter(list(self.vertDictionary.values()))
 
     def addVertex(self, node):
         self.numVertices = self.numVertices + 1
@@ -77,7 +77,7 @@ class Graph:
         self.vertDictionary[to].addNeighbor(self.vertDictionary[frm], cost)
 
     def getVertices(self):
-        return self.vertDictionary.keys()
+        return list(self.vertDictionary.keys())
 
     def setPrevious(self, current):
         self.previous = current
@@ -168,11 +168,11 @@ if __name__ == '__main__':
     G.addEdge('B', 'D', 2)
     G.addEdge('C', 'D', 1)
     
-    print 'Graph data:'
+    print('Graph data:')
     for v in G:
         for w in v.getConnections():
             vid = v.getVertexID()
             wid = w.getVertexID()
-            print '( %s , %s, %3d)' % (vid, wid, v.getWeight(w))
+            print('( %s , %s, %3d)' % (vid, wid, v.getWeight(w)))
 
-    print kruskal(G)
+    print(kruskal(G))

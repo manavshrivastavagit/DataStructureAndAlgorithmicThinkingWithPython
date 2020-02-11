@@ -74,6 +74,6 @@ H[31] = "Jobs"
 H[44] = "Hunting"
 H[55] = "King"
 H[20] = "Lion"
-print H.slots
-print H.data
-print H[20]
+print(H.slots)
+print(H.data)
+print(H[20])

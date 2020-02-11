@@ -23,5 +23,5 @@ def RemoveChars(str, removeTheseChars):
 			index += 1
 	return "".join(temp)
 
-print RemoveChars("careermonk", "e")
+print(RemoveChars("careermonk", "e"))
 

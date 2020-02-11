@@ -34,4 +34,4 @@ def KMP(text, pattern):
             return i - m + 1
     return -1
                 
-print KMP("bacbabababacaca", "ababaca")                
+print(KMP("bacbabababacaca", "ababaca"))                

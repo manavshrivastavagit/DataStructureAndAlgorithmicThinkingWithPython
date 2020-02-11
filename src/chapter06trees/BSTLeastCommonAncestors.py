@@ -76,13 +76,13 @@ def inOrderTraversal(root):
     if not root:
         return
     inOrderTraversal(root.left)
-    print root.data
+    print(root.data)
     inOrderTraversal(root.right)
 
 def preOrderTraversal(root):
     if not root:
         return        
-    print root.data
+    print(root.data)
     preOrderTraversal(root.left)
     preOrderTraversal(root.right)    
     
@@ -101,4 +101,4 @@ insertNode(root, Node(1))
 insertNode(root, Node(5))
 insertNode(root, Node(2))
 insertNode(root, Node(9))
-print FindLCA(root, 2, 9).data
+print(FindLCA(root, 2, 9).data)

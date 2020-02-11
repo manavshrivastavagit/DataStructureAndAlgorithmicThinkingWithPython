@@ -47,4 +47,4 @@ def isPalindrome(str):
              
     return palindrome
  
-print isPalindrome("madam")
+print(isPalindrome("madam"))

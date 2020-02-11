@@ -196,7 +196,7 @@ def inorderRecursive(root):
 	if not root:
 		return
 	inorderRecursive(root.left)
-	print root.data
+	print(root.data)
 	inorderRecursive(root.getRight())
 
 
@@ -226,4 +226,4 @@ root.insert(5)
 # inorderRecursive(root)
 root.insert(2)
 # inorderRecursive(root)
-print findMaxRecursive(root)
+print(findMaxRecursive(root))

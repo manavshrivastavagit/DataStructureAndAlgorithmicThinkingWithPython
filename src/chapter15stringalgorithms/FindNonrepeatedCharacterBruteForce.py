@@ -19,4 +19,4 @@ def findNonrepeated(A):
 			return A[i]
 	return
 		
-print findNonrepeated("careermonk")
+print(findNonrepeated("careermonk"))

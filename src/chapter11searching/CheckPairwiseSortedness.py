@@ -19,4 +19,4 @@ def checkPairwiseSorted(A):
 
 
 A = [34, 48, 10, 13, 2, 80, 30, 23]
-print checkPairwiseSorted(A)
+print(checkPairwiseSorted(A))

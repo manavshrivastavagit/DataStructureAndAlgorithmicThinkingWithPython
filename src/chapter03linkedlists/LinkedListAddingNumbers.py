@@ -21,12 +21,12 @@ class AddingListNumbers:
         head = list1
         while head != None:
             len1 += 1
-            head = head.next
+            head = head.__next__
         
         head = list2
         while head != None:
             len2 += 1
-            head = head.next
+            head = head.__next__
         
         if len1 >= len2:
             longer = list1
@@ -49,10 +49,10 @@ class AddingListNumbers:
                 result = sum
             else:
                 sum.next = Node(value)
-                sum = sum.next
+                sum = sum.__next__
                 
-            longer = longer.next
-            shorter = shorter.next
+            longer = longer.__next__
+            shorter = shorter.__next__
             
         while longer != None:
             value = longer.data + carry
@@ -60,9 +60,9 @@ class AddingListNumbers:
             value -= carry * 10
             
             sum.next = Node(value)
-            sum = sum.next
+            sum = sum.__next__
             
-            longer = longer.next
+            longer = longer.__next__
             
         if carry != 0:
             sum.next = Node(carry)

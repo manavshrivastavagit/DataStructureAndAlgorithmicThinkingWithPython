@@ -28,5 +28,5 @@ def pathFinder(root, val, path, paths):
 def hasPathWithSum(root, val):
     paths = []
     pathFinder(root, val, [], paths)
-    print 'sum:', val
-    print 'paths:', paths
+    print('sum:', val)
+    print('paths:', paths)

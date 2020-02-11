@@ -38,9 +38,9 @@ def maxsum_path(root):
     Rpath = {}
     treeMaximumSumPath(root, True, Lpath, Rpath)
     treeMaximumSumPath(root, False, Lpath, Rpath)
-    print 'Left-path:', Lpath
-    print 'Right-path:', Rpath
-    path2sum = dict((i, Lpath[i] + Rpath[i]) for i in Lpath.keys())
+    print('Left-path:', Lpath)
+    print('Right-path:', Rpath)
+    path2sum = dict((i, Lpath[i] + Rpath[i]) for i in list(Lpath.keys()))
     i = max(path2sum, key=path2sum.get)
-    print 'The path going through node', i, 'with max sum', path2sum[i]
+    print('The path going through node', i, 'with max sum', path2sum[i])
     return path2sum[i]

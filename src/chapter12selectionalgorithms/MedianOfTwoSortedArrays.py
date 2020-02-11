@@ -44,4 +44,4 @@ def findMedianSortedArrays(A, B):
 A = [127, 220, 246, 277, 321, 454, 534, 565, 933]
 B = [12, 22, 24, 27, 32, 45, 53, 65, 93]	
 	
-print(findMedianSortedArrays(A, B))
+print((findMedianSortedArrays(A, B)))

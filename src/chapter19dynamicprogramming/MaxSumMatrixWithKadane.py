@@ -57,4 +57,4 @@ A = [[-1, -2, 13, -4], [-5, -6, -7, -8 ], [-9, 10, -11, -12] , [-13, -14, -15, -
 n = 4
 Aux = [[0 for x in range(n)] for x in range(n)]
 preComputeMatrix(A, n)
-print getMaxMatrix(A, n)
+print(getMaxMatrix(A, n))

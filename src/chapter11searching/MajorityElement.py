@@ -25,4 +25,4 @@ def majorityElement(A):
 	return element
 
 A = [7, 3, 2, 3, 3, 6, 3	]
-print majorityElement(A)
+print(majorityElement(A))

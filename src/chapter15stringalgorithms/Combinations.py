@@ -27,5 +27,5 @@ def combinationByIteration(elems):
 
 res = []
 combinationByRecursion('abc', '', 0, res)
-print combinationByIteration('abc')
-print combinationByIteration('abc')
+print(combinationByIteration('abc'))
+print(combinationByIteration('abc'))

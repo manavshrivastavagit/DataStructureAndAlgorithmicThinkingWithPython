@@ -28,4 +28,4 @@ def SubsetSum2(A):
 	
 A = [3, 2, 4, 19, 3, 7, 13, 10, 6, 11]
 
-print SubsetSum2(A)
+print(SubsetSum2(A))

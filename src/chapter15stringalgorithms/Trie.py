@@ -61,17 +61,17 @@ def tester():
     trie = Trie()
     for i in range(len(x)):
         trie.add(x[i])
-    w = raw_input("Enter a word ")
+    w = input("Enter a word ")
     w = w.upper()
     while w != "Q":
          if w != 'Q': 
-           print w
+           print(w)
            [t, count] = trie.search(w)
            if t == None:
-              print "word not in dictionary", "count = ", count
+              print("word not in dictionary", "count = ", count)
            else:
-              print t.word, " found", " count = ", count
-           w = raw_input("Enter a word ")
+              print(t.word, " found", " count = ", count)
+           w = input("Enter a word ")
            w = w.upper()
      
 

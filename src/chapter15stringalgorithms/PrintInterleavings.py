@@ -20,4 +20,4 @@ def PrintInterleavings(str1, str2):
             perms.append(str2[0] + item)
     return perms
     
-print PrintInterleavings("AB", "CD")    
+print(PrintInterleavings("AB", "CD"))    

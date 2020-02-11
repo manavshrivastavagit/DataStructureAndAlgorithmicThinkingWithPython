@@ -15,6 +15,6 @@ def findingSpans(A):
 		while j <= i and A[i] > A[i - j]:
 		       j = j + 1			                     
 		s[i] = j	    		 	
-	print s
+	print(s)
 
 findingSpans(['6', '3', '4', '5', '2'])

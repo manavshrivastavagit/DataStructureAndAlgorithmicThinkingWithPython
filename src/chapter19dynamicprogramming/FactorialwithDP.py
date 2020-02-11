@@ -21,4 +21,4 @@ def factorial(n):
             factTable[n] = n * factorial(n - 1)
             return factTable[n]
 
-print(factorial(10))
+print((factorial(10)))

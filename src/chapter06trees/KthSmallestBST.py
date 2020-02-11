@@ -76,13 +76,13 @@ def inOrderTraversal(root):
     if not root:
         return
     inOrderTraversal(root.left)
-    print root.data
+    print(root.data)
     inOrderTraversal(root.right)
 
 def preOrderTraversal(root):
     if not root:
         return        
-    print root.data
+    print(root.data)
     preOrderTraversal(root.left)
     preOrderTraversal(root.right)    
 
@@ -106,4 +106,4 @@ insertNode(root, BSTNode(5))
 insertNode(root, BSTNode(2))
 insertNode(root, BSTNode(9))
 # inOrderTraversal(root)
-print kthSmallestInBST(root, 3).data
+print(kthSmallestInBST(root, 3).data)

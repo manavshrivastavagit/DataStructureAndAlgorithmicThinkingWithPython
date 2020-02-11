@@ -24,8 +24,8 @@ def maxSumWithNoTwoContinuousNumbers(A):
 	return M[n - 1]
 	
 A = [-2, 3, -16, 100, -4, 5]
-print maxSumWithNoTwoContinuousNumbers(A)
+print(maxSumWithNoTwoContinuousNumbers(A))
 A = [-2, 11, -4, 13, -5, 2 ]
-print maxSumWithNoTwoContinuousNumbers(A)
+print(maxSumWithNoTwoContinuousNumbers(A))
 A = [-15, -23, -476, -3, -292]
-print maxSumWithNoTwoContinuousNumbers(A)
+print(maxSumWithNoTwoContinuousNumbers(A))

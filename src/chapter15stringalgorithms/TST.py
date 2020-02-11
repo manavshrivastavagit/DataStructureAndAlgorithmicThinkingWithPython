@@ -139,22 +139,22 @@ if __name__ == '__main__':
     # Suffix trie
     def makeTST (seq):
         a = TST ()
-        for x in xrange (len (seq)):
+        for x in range (len (seq)):
             a.insert (seq [x:])
         return a
 
     s = makeTST ('abcabbca')
     for x in s.traverse ():
-        print x
+        print(x)
     for x in ['a', 'bc']:
-        print x
+        print(x)
         for y in s.commonPrefix (x):
-            print y
-    print s.delete ('a')
-    print s.delete ('ca')
-    print s.delete ('bca')
+            print(y)
+    print(s.delete ('a'))
+    print(s.delete ('ca'))
+    print(s.delete ('bca'))
     for x in s.traverse ():
-        print x
+        print(x)
     s = makeTST ([0, 1, 2, 0, 1, 1, 2, 0])
     for x in s.traverse ():
-        print x
+        print(x)

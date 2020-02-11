@@ -53,4 +53,4 @@ maxsize = 0
 size = 0
 cntarr = rmax * [colmax * [0]]
 print ("Number of maximum 1s are ")
-print getMaxOnes(zarr, rmax, colmax)
+print(getMaxOnes(zarr, rmax, colmax))

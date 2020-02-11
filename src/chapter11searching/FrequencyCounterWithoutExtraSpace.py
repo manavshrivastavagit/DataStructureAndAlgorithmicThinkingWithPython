@@ -23,7 +23,7 @@ def frequencyCounter(A):
 		else:
 			pos += 1
 	for i in range(1, n):
-		print  i + 1 , "--->", abs(A[i])
+		print(i + 1 , "--->", abs(A[i]))
 
 A = [10, 1, 9, 4, 7, 6, 5, 5, 1, 2, 1]
 frequencyCounter(A)

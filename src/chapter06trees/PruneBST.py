@@ -77,13 +77,13 @@ def inOrderTraversal(root):
     if not root:
         return
     inOrderTraversal(root.left)
-    print root.data
+    print(root.data)
     inOrderTraversal(root.right)
 
 def preOrderTraversal(root):
     if not root:
         return        
-    print root.data
+    print(root.data)
     preOrderTraversal(root.left)
     preOrderTraversal(root.right)    
 

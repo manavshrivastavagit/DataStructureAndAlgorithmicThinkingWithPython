@@ -19,7 +19,7 @@ def twoElementsWithSumKWithHash(A, K):
 			table[element] = 0			
 	for element in A:
 		if K - element in table:
-			print "yes-->", element, "+", K - element, " = ", K			
+			print("yes-->", element, "+", K - element, " = ", K)			
 A = [1, 4, 45, 6, 10, -8]
 A.sort()
 twoElementsWithSumKWithHash(A, 11)

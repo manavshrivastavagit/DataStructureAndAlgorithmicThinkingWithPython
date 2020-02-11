@@ -20,9 +20,9 @@ def findNonrepeated(A):
 
 	for char in A.lower():
 		if table[char] == 1:
-			print("the first non repeated character is: %s" % (char))
+			print(("the first non repeated character is: %s" % (char)))
 			return char
 
 	return
  
-print findNonrepeated("careermonk")
+print(findNonrepeated("careermonk"))

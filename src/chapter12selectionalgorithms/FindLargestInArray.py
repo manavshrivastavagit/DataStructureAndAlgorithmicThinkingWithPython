@@ -15,4 +15,4 @@ def FindLargestInArray(A):
             max = number
     return max
 	
-print(FindLargestInArray([2, 1, 5, 234, 3, 44, 7, 6, 4, 5, 9, 11, 12, 14, 13]))
+print((FindLargestInArray([2, 1, 5, 234, 3, 44, 7, 6, 4, 5, 9, 11, 12, 14, 13])))

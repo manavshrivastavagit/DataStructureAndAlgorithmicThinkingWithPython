@@ -13,7 +13,7 @@ def PrintTwoRepeatedElementsHash2(A):
 	for element in A:
 		# print element
 		if element in table and table[element] == 1:
-			print element
+			print(element)
 			table[element] += 1
 		elif element in table:
 			table[element] += 1	

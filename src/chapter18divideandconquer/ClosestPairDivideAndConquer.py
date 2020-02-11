@@ -8,7 +8,7 @@
 # 				   warranty; without even the implied warranty of 
 # 				    merchantability or fitness for a particular purpose. 
 
-from __future__ import generators
+
 
 def ClosestPairWithDivideAndConquer(L):
 	def square(x): 
@@ -62,4 +62,4 @@ def ClosestPairWithDivideAndConquer(L):
 	recur(L)
 	return best[1]
 
-print ClosestPairWithDivideAndConquer([(12, 30), (40, 50), (5, 1), (12, 10), (3, 4)])
+print(ClosestPairWithDivideAndConquer([(12, 30), (40, 50), (5, 1), (12, 10), (3, 4)]))

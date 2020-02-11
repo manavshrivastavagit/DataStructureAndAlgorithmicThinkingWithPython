@@ -31,4 +31,4 @@ def find_maximum_apples_count_3ways_of_reaching(Apples, n, m):
 	return S[n-1][m-1]
 
 Apples = [ [1, 2, 4, 7], [2, 1, 6, 1], [12, 5, 9, 19], [4, 29, 50, 60] ]
-print find_maximum_apples_count_3ways_of_reaching(Apples, len(Apples), len(Apples[0]))
+print(find_maximum_apples_count_3ways_of_reaching(Apples, len(Apples), len(Apples[0])))

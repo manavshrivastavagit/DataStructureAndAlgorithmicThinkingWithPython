@@ -12,17 +12,17 @@
 
 from random import randint
 from time import sleep
-from Queue import Queue
+from queue import Queue
 from myThread import MyThread
 
 def writeQ(queue):
-	print 'producing object for Q...',
+	print('producing object for Q...', end=' ')
 	queue.put('MONK', 1)
-	print "size now", queue.qsize()
+	print("size now", queue.qsize())
 
 def readQ(queue):
 	val = queue.get(1)
-	print 'consumed object from Q... size now', queue.qsize()
+	print('consumed object from Q... size now', queue.qsize())
 
 def producer(queue, loops):
 	for i in range(loops):
@@ -35,7 +35,7 @@ def consumer(queue, loops):
 	   sleep(randint(2, 5))
 
 funcs = [producer, consumer]
-nfuncs = range(len(funcs))
+nfuncs = list(range(len(funcs)))
 
 nloops = randint(2, 5)
 q = Queue(32)
@@ -52,4 +52,4 @@ for i in nfuncs:
 for i in nfuncs:
    threads[i].join()
 
-print 'all DONE'
+print('all DONE')

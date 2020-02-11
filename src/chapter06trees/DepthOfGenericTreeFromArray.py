@@ -23,4 +23,4 @@ def findDepthInGenericTree(P):
 	return maxDepth
 
 P = [-1, 0, 1, 6, 6, 0, 0, 2, 7]
-print "Depth of given Generic Tree is:", findDepthInGenericTree(P)
+print("Depth of given Generic Tree is:", findDepthInGenericTree(P))

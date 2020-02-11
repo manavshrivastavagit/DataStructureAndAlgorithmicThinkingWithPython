@@ -25,13 +25,13 @@ class Stack:
         return self.array[self.size()-1]
     def pop(self):
         if self.isEmpty():
-            print "Underflow"
+            print("Underflow")
             return None
         data = self.array.pop()
         return data
     def push(self, data):
         if self.isFull():
-            print "Overflow"
+            print("Overflow")
             return
         self.array.append(data)
 
@@ -54,12 +54,12 @@ class AdvStack:
 
 testS = AdvStack()
 testS.push(2)
-print  testS.minimum()
+print(testS.minimum())
 testS.push(1)
-print  testS.minimum()
+print(testS.minimum())
 testS.push(6)
-print  testS.minimum()
+print(testS.minimum())
 testS.pop()
-print  testS.minimum()
+print(testS.minimum())
 testS.pop()
-print  testS.minimum()
+print(testS.minimum())

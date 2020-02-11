@@ -18,7 +18,7 @@ def f(n) :
 	return sum
 
 
-print f(4)
+print(f(4))
 
 
 
@@ -32,7 +32,7 @@ def f2(n) :
 
 	return T[n]
 
-print f2(4)
+print(f2(4))
 
 def f3(n):
 	T = [0] * (n + 1)
@@ -43,4 +43,4 @@ def f3(n):
 	return T[n]
 
 
-print f3(4)
+print(f3(4))

@@ -91,19 +91,19 @@ if __name__ == "__main__":
     graph = Graph(g)
 
     print("Vertices of graph:")
-    print(graph.vertices())
+    print((graph.vertices()))
 
     print("Edges of graph:")
-    print(graph.edges())
+    print((graph.edges()))
     
     pathResult = graph.countSimplePathsFromSourceToDestination("a", "e") 
     if(len(pathResult) == 0):
-	    print "No path between source and destination"
+	    print("No path between source and destination")
     else:
-	    print pathResult
+	    print(pathResult)
 	    
     pathResult = graph.countSimplePathsFromSourceToDestination("a", "f") 
     if(len(pathResult) == 0):
-	    print "No path between source and destination"
+	    print("No path between source and destination")
     else:
-	    print pathResult
+	    print(pathResult)

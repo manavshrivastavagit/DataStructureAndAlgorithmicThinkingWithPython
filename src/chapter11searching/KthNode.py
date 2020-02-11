@@ -20,14 +20,14 @@ class LinkedList:
 		temp = self.head
 		while temp:
 			count += 1
-			temp = temp.next
+			temp = temp.__next__
 		return count
 	def findKthBruteForce(self, K):
 		length = ll.length()
 		c = 0
 		temp = ll.head
 		while (c<(length-K)):
-			temp = temp.next
+			temp = temp.__next__
 			c += 1
 		return temp
 	def findKthHashing(self, K):
@@ -36,21 +36,21 @@ class LinkedList:
 		temp = ll.head
 		while (temp):
 			h[c] = temp 
-			temp = temp.next
+			temp = temp.__next__
 			c += 1
 		return h[c-K]
 	def findKthEfficient(self, K):
 		v1 = ll.head
 		while (K and v1):
-			v1 = v1.next
+			v1 = v1.__next__
 			K -= 1
 		if K:
 			return None
 
 		v2 = ll.head
 		while(v1):
-			v1 = v1.next
-			v2 = v2.next
+			v1 = v1.__next__
+			v2 = v2.__next__
 		return v2	
  
 node1 = Node(10)
@@ -66,6 +66,6 @@ node4.next = node5
 ll = LinkedList(node1)
 kthNode = ll.findKthEfficient(20)
 if kthNode:
-	print kthNode.data
+	print(kthNode.data)
 else:
-	print "Check the list...seems K is greater than n"
+	print("Check the list...seems K is greater than n")

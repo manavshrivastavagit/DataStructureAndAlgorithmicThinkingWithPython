@@ -17,4 +17,4 @@ def CatalanRecursive(n):
 			count += CatalanRecursive(i) * CatalanRecursive(n - 1 - i)
 		return count	
 
-print CatalanRecursive(4)
+print(CatalanRecursive(4))

@@ -8,7 +8,7 @@ def findMin(A, i, j):
 
 def largestHistrogram(A):
 	maxArea = 0
-	print A
+	print(A)
 	for i in range(len(A)):
 		for j in range(i, len(A)):
 			minimum_height = A[i]
@@ -18,4 +18,4 @@ def largestHistrogram(A):
 
 
 A = [6, 2, 5, 4, 5, 1, 6] 
-print "largestRectangleArea: ", largestHistrogram(A)
+print("largestRectangleArea: ", largestHistrogram(A))

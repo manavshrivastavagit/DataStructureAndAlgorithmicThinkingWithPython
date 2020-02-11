@@ -25,7 +25,7 @@ class Solution:
         p1 = head
         while None != p1:
             save_list.append(p1)
-            p1 = p1.next
+            p1 = p1.__next__
         new_head = RandomListNode(-1)
         new_head.next = head
         first = new_head
@@ -36,26 +36,26 @@ class Solution:
         while None != first:
             copySecond = RandomListNode(second.data) if None != second else None
             copyFirst.next = copySecond
-            copyFirst = copyFirst.next
-            first = first.next
+            copyFirst = copyFirst.__next__
+            first = first.__next__
             if None != second:
-                second = second.next
+                second = second.__next__
 
         p1 = head
-        p1_tail = head.next
-        p2 = copyHead.next
+        p1_tail = head.__next__
+        p2 = copyHead.__next__
         while None != p1:
-            p1_tail = p1.next
+            p1_tail = p1.__next__
             p1.next = p2
             p2.random = p1
             p1 = p1_tail
-            p2 = p2.next
-        p2 = copyHead.next
+            p2 = p2.__next__
+        p2 = copyHead.__next__
         while None != p2:
-            p2.random = p2.random.random.next if None != p2.random.random else None
-            p2 = p2.next
+            p2.random = p2.random.random.__next__ if None != p2.random.random else None
+            p2 = p2.__next__
         len_save_list = len(save_list)
         for i in range(0, len_save_list - 1):
             save_list[i].next = save_list[i + 1]
         save_list[len_save_list - 1].next = None
-        return copyHead.next
+        return copyHead.__next__

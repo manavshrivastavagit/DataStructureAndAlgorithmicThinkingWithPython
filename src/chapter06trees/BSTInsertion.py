@@ -33,13 +33,13 @@ def inOrderTraversal(root):
     if not root:
         return
     inOrderTraversal(root.left)
-    print root.data
+    print(root.data)
     inOrderTraversal(root.right)
 
 def preOrderTraversal(root):
     if not root:
         return        
-    print root.data
+    print(root.data)
     preOrderTraversal(root.left)
     preOrderTraversal(root.right)    
 
@@ -48,8 +48,8 @@ insertNode(r, Node(7))
 insertNode(r, Node(1))
 insertNode(r, Node(5))
 
-print "in order:"
+print("in order:")
 inOrderTraversal(r)
 
-print "pre order"
+print("pre order")
 preOrderTraversal(r)

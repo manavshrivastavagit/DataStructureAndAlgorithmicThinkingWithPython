@@ -17,4 +17,4 @@ def LCSLength(X, Y):
     else:
         return max(LCSLength(X, n), LCSLength(m, Y), key=len)
 	
-print (LCSLength('thisisatest', 'testingLCS123testing'))	
+print((LCSLength('thisisatest', 'testingLCS123testing')))	

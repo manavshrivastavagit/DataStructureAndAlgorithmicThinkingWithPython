@@ -17,8 +17,8 @@ def reverse_number(n):
 		s -= 1
 		n >>= 1
 	nReverse <<= s	
-	print nReverse
+	print(nReverse)
 
 n = 4
-print n
+print(n)
 reverse_number(n)

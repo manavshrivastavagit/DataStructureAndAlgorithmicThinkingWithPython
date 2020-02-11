@@ -23,7 +23,7 @@ def ReversingString(str):
 	return "".join(s)
 
 str = "CareerMonk Publications."
-print ReversingString(str)
+print(ReversingString(str))
 
 def reverse(str):
   r = ""
@@ -31,7 +31,7 @@ def reverse(str):
     r = c + r
   return r
 str = "CareerMonk Publications."
-print reverse(str)
+print(reverse(str))
 
 def ReversingString(str):
 	s = list(str)
@@ -46,4 +46,4 @@ def ReversingString(str):
 	return "".join(s)
 
 str = "CareerMonk Publications."
-print ReversingString(str)
+print(ReversingString(str))

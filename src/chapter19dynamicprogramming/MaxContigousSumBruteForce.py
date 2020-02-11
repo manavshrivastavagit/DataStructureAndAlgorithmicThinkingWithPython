@@ -22,8 +22,8 @@ def MaxContigousSum(A):
 	return maxSum;
 
 A = [-2, 3, -16, 100, -4, 5]
-print MaxContigousSum(A)
+print(MaxContigousSum(A))
 A = [-2, 11, -4, 13, -5, 2 ]
-print MaxContigousSum(A)
+print(MaxContigousSum(A))
 A = [-15, -23, -476, -3, -292]
-print MaxContigousSum(A)
+print(MaxContigousSum(A))

@@ -21,7 +21,7 @@ def CutVertices(G, u) :
 		if(G.adjMatrix[u][v] and dfsnum[v] == -1):
 			CutVertices(v) 
 			if(low[v] > dfsnum[u]):
-				print "Cut Vetex:", u
+				print("Cut Vetex:", u)
 			low[u] = min (low[u] , low[v]) 
 		 
 		else:  # (u,v) is a back edge

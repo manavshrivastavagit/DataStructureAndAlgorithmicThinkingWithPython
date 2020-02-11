@@ -27,7 +27,7 @@ class AVLTree:
      def recInOrderPrint(self, root):
          if root != None:
               self.recInOrderPrint(root.left)
-              print root.data
+              print(root.data)
               self.recInOrderPrint(root.right)
 
      def insert(self, data):
@@ -159,7 +159,7 @@ def rangeCount(root, a, b):
 
 def tester():
 	avlNode = generateAVLTree(4)
-	print rangeCount(avlNode, 2, 7)
+	print(rangeCount(avlNode, 2, 7))
 
 if __name__ == '__main__':
 	tester()

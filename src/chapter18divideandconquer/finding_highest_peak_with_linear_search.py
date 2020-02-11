@@ -18,4 +18,4 @@ def find_peak(A):
 	return max_peak_value, max_peak_index
 
 A = [35, 5, 20, 2, 90, 25, 80, 25, 115, 40]
-print A, "\n", find_peak(A)
+print(A, "\n", find_peak(A))

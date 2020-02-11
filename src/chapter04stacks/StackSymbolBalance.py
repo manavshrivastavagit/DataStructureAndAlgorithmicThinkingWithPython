@@ -56,8 +56,8 @@ def checkSymbolBalance(input):
                      
     return balanced
  
-print checkSymbolBalance("([)]") 
+print(checkSymbolBalance("([)]")) 
 '''Output: 0'''
  
-print checkSymbolBalance("{{([][])}()}") 
+print(checkSymbolBalance("{{([][])}()}")) 
 '''Output: 1'''

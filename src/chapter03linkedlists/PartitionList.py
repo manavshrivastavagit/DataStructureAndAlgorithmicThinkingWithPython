@@ -31,20 +31,20 @@ class PartitionList(object):
             # If the original list node is lesser than the given X, assign it to the lesser list.
             if head.data < X:
                 lesser.next = head
-                lesser = lesser.next
+                lesser = lesser.__next__
             else:
                 # If the original list node is greater or equal to the given X, assign it to the greater list.
                 greater.next = head
-                greater = greater.next
+                greater = greater.__next__
 
             # move ahead in the original list
-            head = head.next
+            head = head.__next__
 
         # Last node of "greater" list would also be ending node of the reformed list
         greater.next = None
 
         # Once all the nodes are correctly assigned to the two lists,
         # combine them to form a single list which would be returned.
-        lesser.next = greater_head.next
+        lesser.next = greater_head.__next__
 
-        return lesser_head.next
+        return lesser_head.__next__

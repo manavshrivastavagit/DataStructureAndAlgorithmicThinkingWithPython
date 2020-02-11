@@ -16,4 +16,4 @@ def find_peak(A):
 
 A = [35, 5, 20, 2, 40, 25, 80, 25, 15, 40]
 peak = find_peak(A)
-print A, "\n", A[peak]
+print(A, "\n", A[peak])

@@ -23,4 +23,4 @@ def maxIndexDiff(A):
 	return maxDiff, maxI, maxJ
 	
 A = [34, 8, 10, 3, 2, 80, 30, 33, 1]
-print maxIndexDiff(A)
+print(maxIndexDiff(A))

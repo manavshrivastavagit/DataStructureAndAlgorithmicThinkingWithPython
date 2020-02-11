@@ -24,7 +24,7 @@ def MaxRepititionsWithHash(A):
 			max = table[element]
 			maxRepeatedElement = element
 
-	print maxRepeatedElement, "repeated for ", max, " times"
+	print(maxRepeatedElement, "repeated for ", max, " times")
  
 A = [3, 2, 1, 3, 2, 3, 2, 3, 3]
 MaxRepititionsWithHash(A)

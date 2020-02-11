@@ -13,11 +13,11 @@ def TreeCompression(root, previousNodeData):
 	if(not root): 
 		return None
 	TreeCompression(root.left, previousNode)  
-	if(previousNodeData == -sys.maxint):
+	if(previousNodeData == -sys.maxsize):
 		previousNodeData = root.data
 		free(root)
 
-	if(previousNodeData != -sys.maxint):  # Process current node
+	if(previousNodeData != -sys.maxsize):  # Process current node
 		root.data2 = previousNodeData
 	return TreeCompression(root.right, previousNode)
 

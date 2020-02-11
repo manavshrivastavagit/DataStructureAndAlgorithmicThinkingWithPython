@@ -9,14 +9,14 @@
 # 				    merchantability or fitness for a particular purpose. 
 
 def DLLtoBalancedBST(head):
-	if(not head or not head.next): 
+	if(not head or not head.__next__): 
 		return head
 	temp = FindMiddleNode(head)  # Refer Linked Lists chapter for this function. We can use two-pointer logic to find the middle node
 	p = head
-	while(p.next != temp):
-		p = p.next
+	while(p.__next__ != temp):
+		p = p.__next__
 	p.next = None
-	q = temp.next
+	q = temp.__next__
 	temp.next = None
 	temp.prev = DLLtoBalancedBST(head)
 	temp.next = DLLtoBalancedBST(q)

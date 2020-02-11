@@ -29,4 +29,4 @@ def LongestPalindromeSubsequence(A):
 	# print L
 	return L[0][n - 1]
 	
-print  LongestPalindromeSubsequence("Career Monk Publications")				
+print(LongestPalindromeSubsequence("Career Monk Publications"))				

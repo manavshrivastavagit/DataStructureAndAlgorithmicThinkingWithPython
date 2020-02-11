@@ -27,7 +27,7 @@ class Node:
 		self.next = next
 		 
 	def get_next(self):
-		return self.next
+		return self.__next__
 	 
 	 
 class LinkedList:
@@ -115,7 +115,7 @@ class LinkedList:
 		current = self.head
 		 
 		while current != None:
-			print current.get_data()
+			print(current.get_data())
 			current = current.get_next()
 			 
 			 
@@ -126,10 +126,10 @@ class LinkedList:
 		 
 		while current.get_next() != None and not found:
 			if current.get_data() == item:
-				print current.get_data()
-				print previous.get_data()
+				print(current.get_data())
+				print(previous.get_data())
 				found = True
-				previous.set_next(current.next)
+				previous.set_next(current.__next__)
 			else:
 				previous = current
 				current = current.get_next()
@@ -173,21 +173,21 @@ class LinkedList:
 			tortoise = tortoise.get_next()
 	
 	def detectCycleStart(self) :
-		if None == self.head or None == self.head.next:
+		if None == self.head or None == self.head.__next__:
 				return None
 		
-		slow = self.head.next
-		fast = slow.next
+		slow = self.head.__next__
+		fast = slow.__next__
 		while slow != fast:
-				slow = slow.next
+				slow = slow.__next__
 				try:
-						fast = fast.next.next
+						fast = fast.next.__next__
 				except AttributeError:
 						return None 
 		slow = self.head
 		while slow != fast:
-				slow = slow.next
-				fast = fast.next
+				slow = slow.__next__
+				fast = fast.__next__
 		
 		return slow.get_data()  # beginning of loop
 	
@@ -209,5 +209,5 @@ if __name__ == "__main__":
 	linkedlst.printList()
 	 
 	linkedlst.induceCycle(2, 8)
-	print linkedlst.detectCycle()
-	print linkedlst.detectCycleStart()
+	print(linkedlst.detectCycle())
+	print(linkedlst.detectCycleStart())

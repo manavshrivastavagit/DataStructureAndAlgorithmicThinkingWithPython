@@ -26,7 +26,7 @@ def FirstRepeatedElementAmongRepeatedElementsWithHash(A):
 			max = table[element]
 			maxRepeatedElement = element
 
-	print maxRepeatedElement, "repeated for ", abs(max), " times"
+	print(maxRepeatedElement, "repeated for ", abs(max), " times")
  
 A = [3, 2, 1, 1, 2, 1, 2, 5, 5]
 FirstRepeatedElementAmongRepeatedElementsWithHash(A)

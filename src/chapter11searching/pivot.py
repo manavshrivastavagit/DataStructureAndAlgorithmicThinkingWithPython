@@ -23,4 +23,4 @@ def findPivot2(A):
 			return A[i]		
 		leftSum += A[i]
 
-print findPivot2([12,6,9,3,5,2,1,9,10])
+print(findPivot2([12,6,9,3,5,2,1,9,10]))

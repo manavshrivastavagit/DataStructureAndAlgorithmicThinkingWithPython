@@ -12,7 +12,7 @@ def CheckDuplicatesBruteForce(A):
 	for i in range(0, len(A)):
 		for j in range(i + 1, len(A)):
 			if(A[i] == A[j]):
-				print("Duplicates exist:", A[i])
+				print(("Duplicates exist:", A[i]))
 				return;
 	print("No duplicates in given array.")
 

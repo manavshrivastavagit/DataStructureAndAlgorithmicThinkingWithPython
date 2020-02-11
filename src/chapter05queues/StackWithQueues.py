@@ -24,7 +24,7 @@ class Queue(object):
 			self.queue.remove(a) 
 			return a 
 		else: 
-			raise IndexError, 'queue is empty' 
+			raise IndexError('queue is empty') 
 			
 	def size(self): 
 		return len(self.queue) 
@@ -45,7 +45,7 @@ class Stack(object):
 			
 	def pop(self): 
 		if self.isEmpty(): 
-			raise IndexError, 'stack is empty' 
+			raise IndexError('stack is empty') 
 		elif self.Q2.isEmpty(): 
 			while not self.Q1.isEmpty(): 
 				cur = self.Q1.dequeue() 
@@ -60,7 +60,7 @@ class Stack(object):
 				self.Q1.enqueue(cur)
 
 s = Stack()
-for i in xrange(5):
+for i in range(5):
     s.push(i)
-for i in xrange(5):
-    print s.pop()  
+for i in range(5):
+    print(s.pop())  

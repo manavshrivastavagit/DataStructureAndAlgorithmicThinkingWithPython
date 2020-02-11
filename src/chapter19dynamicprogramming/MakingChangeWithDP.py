@@ -23,8 +23,8 @@ def main():
     coinsUsed = [0] * (amountToGetChange + 1)
     coinCount = [0] * (amountToGetChange + 1)
 
-    print("Making change for", amountToGetChange, "requires")
-    print(MakingChange(coins, amountToGetChange, coinCount, coinsUsed), "coins")
+    print(("Making change for", amountToGetChange, "requires"))
+    print((MakingChange(coins, amountToGetChange, coinCount, coinsUsed), "coins"))
     print("They are:")
     printingCoins(coinsUsed, amountToGetChange)
     print("The used list is as follows:")

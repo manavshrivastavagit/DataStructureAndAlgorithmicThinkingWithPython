@@ -21,4 +21,4 @@ for i in range (1, 1001):
 def CatalanNumber(n):
     return catalan[n]
     
-print CatalanRecursive(4)    
+print(CatalanRecursive(4))    

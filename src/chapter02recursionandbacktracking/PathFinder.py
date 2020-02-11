@@ -25,4 +25,4 @@ def path_finder( Matrix , position , N ):
 
 Matrix = [[ 1 , 1 , 1, 1 , 0], [ 0 , 1 , 0, 1 , 0], [ 0 , 1 , 0, 1 , 0], [ 0 , 1 , 0, 0 , 0], [ 1 , 1 , 1, 1 , 1]]
 
-print path_finder(Matrix,(0,0),5)
+print(path_finder(Matrix,(0,0),5))

@@ -23,7 +23,7 @@ class LinkedListSortWithMergeSort:
         counter = 0 
         temp = head
         while temp != None:
-            temp = temp.next
+            temp = temp.__next__
             counter += 1
         return self.sort(head, counter)
         
@@ -32,7 +32,7 @@ class LinkedListSortWithMergeSort:
             return head
         list2 = head
         for i in range(0, size // 2):
-            list2 = list2.next
+            list2 = list2.__next__
         list1 = self.sort(head, size // 2)
         list2 = self.sort(list2, size - size // 2)
         return self.merge(list1, size // 2, list2, size - size // 2)
@@ -45,22 +45,22 @@ class LinkedListSortWithMergeSort:
         while pointer1 < sizeList1 and pointer2 < sizeList2:
             if list1.data < list2.data:
                 list.next = list1
-                list1 = list1.next
+                list1 = list1.__next__
                 pointer1 += 1
             else:
                 list.next = list2
-                list2 = list2.next
+                list2 = list2.__next__
                 pointer2 += 1
-            list = list.next
+            list = list.__next__
         while pointer1 < sizeList1:
             list.next = list1
-            list1 = list1.next
+            list1 = list1.__next__
             pointer1 += 1
-            list = list.next
+            list = list.__next__
         while pointer2 < sizeList2:
             list.next = list2
-            list2 = list2.next
+            list2 = list2.__next__
             pointer2 += 1
-            list = list.next
+            list = list.__next__
         list.next = None
-        return dummy.next
+        return dummy.__next__

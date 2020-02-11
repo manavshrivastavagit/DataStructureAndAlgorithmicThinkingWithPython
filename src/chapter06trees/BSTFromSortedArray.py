@@ -22,7 +22,7 @@ def printBST(root):
 		return
 	else:
 		printBST(root.left)
-		print root.data, " ",
+		print(root.data, " ", end=' ')
 		printBST(root.right)
 
 def printList(head):
@@ -30,19 +30,19 @@ def printList(head):
   to test whether both the 'next' and 'previous' pointers are fine'''
  # print forward direction
  h = head
- print '[%d]' % (h.data),
+ print('[%d]' % (h.data), end=' ')
  h = h.right
  while h != head:
-     print '[%d]' % (h.data),
+     print('[%d]' % (h.data), end=' ')
      h = h.right
 
- print ""
+ print("")
  # print in reverse direction
  h = head.left
- print '[%d]' % (h.data),
+ print('[%d]' % (h.data), end=' ')
  h = h.left
  while h != head.left:
-     print '[%d]' % (h.data),
+     print('[%d]' % (h.data), end=' ')
      h = h.left
 
 def  BuildBST(A, left, right) :
@@ -68,5 +68,5 @@ if __name__ == "__main__":
 	# create the sample BST
 	A = [2, 3, 4, 5, 6, 7]
 	root = BuildBST(A, 0, len(A) - 1)
-	print "\ncreating BST"
+	print("\ncreating BST")
 	printBST(root)

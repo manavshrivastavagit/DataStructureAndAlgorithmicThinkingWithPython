@@ -38,6 +38,6 @@ def heapify (A, index, maxIndex):
         A[index], A[largest] = A[largest], A[index]
         heapify(A, largest, maxIndex)
 
-print kthSmallest(range(10), 3)
-print kthSmallest(range(10), 1)
-print kthSmallest(range(10), 10)
+print(kthSmallest(list(range(10)), 3))
+print(kthSmallest(list(range(10)), 1))
+print(kthSmallest(list(range(10)), 10))

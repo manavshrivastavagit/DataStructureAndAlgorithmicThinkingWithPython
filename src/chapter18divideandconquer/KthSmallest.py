@@ -12,7 +12,7 @@ CHUNK_SIZE = 5
 
 
 def kthByExtreme(unsortedList, k):
-    for ith in xrange(k):
+    for ith in range(k):
         kth, unsortedList = removeSmallest(unsortedList)
     return kth
 

@@ -144,13 +144,13 @@ def levelOrder(root, result):
         q.put(n.right)	
 	
 root = BinaryTree(11)
-print(root.get_data())
+print((root.get_data()))
 
 root.insertLeft(1)
 root.insertLeft(10)
 root.insertLeft(1100)
-print(root.getLeft().get_data())
+print((root.getLeft().get_data()))
 root.insertRight(5)
-print(root.getRight().get_data())
+print((root.getRight().get_data()))
 root.getRight().set_data(2)
-print(root.getRight().get_data())	
+print((root.getRight().get_data()))	

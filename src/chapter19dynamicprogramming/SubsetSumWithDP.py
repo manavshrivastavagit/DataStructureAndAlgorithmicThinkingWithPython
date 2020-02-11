@@ -24,4 +24,4 @@ def SubsetSum(A, T):
 
 A = [3, 2, 4, 19, 3, 7, 13, 10, 6, 11]
 
-print SubsetSum(A, 17)
+print(SubsetSum(A, 17))

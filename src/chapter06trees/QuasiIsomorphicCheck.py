@@ -101,7 +101,7 @@ def inorderIterative(root):
 			node = node.left
 		else:
 			node = stack.pop()
-			print node.data
+			print(node.data)
 			node = node.right
 
 # Post-order iterative traversal. The nodes' values are appended to the result list in traversal order
@@ -123,7 +123,7 @@ def postorderIterative(root):
                 node = node.right
             else:
                 visited.add(node)
-                print node.data
+                print(node.data)
                 node = None
 
 def quasiIsomorphic(root1, root2):
@@ -150,4 +150,4 @@ root2.insertLeft(9900)
 root2.insertRight(8)
 root2.getRight().set_data(2)
 postorderIterative(root2)
-print "QuasiIsomorphic:", quasiIsomorphic(root1, root2)
+print("QuasiIsomorphic:", quasiIsomorphic(root1, root2))

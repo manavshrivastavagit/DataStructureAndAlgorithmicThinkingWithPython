@@ -13,7 +13,7 @@ from collections import defaultdict
  
 def HuffmanEncode(characterFrequency):
     """Huffman encode the given dict mapping symbols to weights"""
-    heap = [[freq, [sym, ""]] for sym, freq in characterFrequency.items()]
+    heap = [[freq, [sym, ""]] for sym, freq in list(characterFrequency.items())]
     heapify(heap)
     while len(heap) > 1:
         lo = heappop(heap)
@@ -30,6 +30,6 @@ characterFrequency = defaultdict(int)
 for character in inputText:
     characterFrequency[character] += 1
 huffCodes = HuffmanEncode(characterFrequency)
-print "Symbol\tFrequency\tHuffman Code"
+print("Symbol\tFrequency\tHuffman Code")
 for p in huffCodes:
-    print "%s\t\t\t%s\t\t\t%s" % (p[0], characterFrequency[p[0]], p[1])
+    print("%s\t\t\t%s\t\t\t%s" % (p[0], characterFrequency[p[0]], p[1]))

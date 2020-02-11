@@ -77,13 +77,13 @@ def inOrderTraversal(root):
     if not root:
         return
     inOrderTraversal(root.left)
-    print root.data
+    print(root.data)
     inOrderTraversal(root.right)
 
 def preOrderTraversal(root):
     if not root:
         return        
-    print root.data
+    print(root.data)
     preOrderTraversal(root.left)
     preOrderTraversal(root.right)    
 
@@ -111,7 +111,7 @@ def FloorInBSTUtil(root, data):
 def CeilInBST(root, data):
 	# Base case
 	if(root == None):
-		return -sys.maxint
+		return -sys.maxsize
 	# We found equal data
 	if(root.data == data):
 		return root.data
@@ -133,4 +133,4 @@ insertNode(root, BSTNode(2))
 insertNode(root, BSTNode(98))
 # inOrderTraversal(root)
 for i  in range(10):
-	print i, "ceil is ", CeilInBST(root, i)
+	print(i, "ceil is ", CeilInBST(root, i))

@@ -22,4 +22,4 @@ def oddeven(A):
                 A[i], A[i + 1] = A[i + 1], A[i]
                 sorted = False
         if not sorted:
-            print A
+            print(A)

@@ -13,7 +13,7 @@ def firstRepeatedChar(A):
 	for char in A.lower():
 		if char in table:
 			table[char] += 1
-			print("the first repeated character is: %s" % (char))
+			print(("the first repeated character is: %s" % (char)))
 			return char
 		elif char != " ":
 			table[char] = 1
@@ -21,4 +21,4 @@ def firstRepeatedChar(A):
 			table[char] = 0
 	return
 
-print firstRepeatedChar("careermonk")
+print(firstRepeatedChar("careermonk"))

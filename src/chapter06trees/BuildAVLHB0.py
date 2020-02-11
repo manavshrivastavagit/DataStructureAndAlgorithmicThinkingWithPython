@@ -26,7 +26,7 @@ class AVLTree:
      def recInOrderPrint(self, root):
          if root != None:
               self.recInOrderPrint(root.left)
-              print root.data
+              print(root.data)
               self.recInOrderPrint(root.right)
 
      def insert(self, data):
@@ -149,7 +149,7 @@ def BuildHB0(h):
 def tester():
 	avlNode = BuildHB0(4)
 	avlNode.inOrderPrint()
-	print "height = ", avlNode.height()
+	print("height = ", avlNode.height())
 
 if __name__ == '__main__':
 	tester()

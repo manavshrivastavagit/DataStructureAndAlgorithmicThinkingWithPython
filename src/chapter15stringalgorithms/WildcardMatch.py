@@ -24,10 +24,10 @@ def wildcardMatch(inputString, pattern):
     
     return 0
 
-print wildcardMatch("cc", "c")
-print wildcardMatch("cc", "cc")
-print wildcardMatch("ccc", "cc")
-print wildcardMatch("cc", "*")
-print wildcardMatch("cc", "a*")
-print wildcardMatch("ab", "?*")
-print wildcardMatch("cca", "c*a*b")
+print(wildcardMatch("cc", "c"))
+print(wildcardMatch("cc", "cc"))
+print(wildcardMatch("ccc", "cc"))
+print(wildcardMatch("cc", "*"))
+print(wildcardMatch("cc", "a*"))
+print(wildcardMatch("ab", "?*"))
+print(wildcardMatch("cca", "c*a*b"))

@@ -17,7 +17,7 @@ class Node(object):
         self.next = [None] * level
     
     def __str__(self):
-        return "Node(%s,%s)" % (self.data, len(self.next))
+        return "Node(%s,%s)" % (self.data, len(self.__next__))
     __repr__ = __str__
     
 class SkipList(object):
@@ -43,11 +43,11 @@ class SkipList(object):
         while level >= 0:
             if self.verbose and \
                 n.next[level] != None and n.next[level].data >= data:
-                print 'DROP down from level', level + 1
+                print('DROP down from level', level + 1)
             while n.next[level] != None and n.next[level].data < data:
                 self._n_traverse += 1
                 if self.verbose:
-                    print 'AT level', level, 'data', n.next[level].data
+                    print('AT level', level, 'data', n.next[level].data)
                 n = n.next[level]
             update[level] = n
             level -= 1
@@ -77,12 +77,12 @@ class SkipList(object):
                 update[i].next[i] = node
     
 def printLevel(sl, level):
-    print 'level %d:' % level,
+    print('level %d:' % level, end=' ')
     node = sl.head.next[level]
     while node:
-        print node.data, '=>',
+        print(node.data, '=>', end=' ')
         node = node.next[level]
-    print 'END'
+    print('END')
 
 x = SkipList(4)
 for i in range(0, 20, 2):

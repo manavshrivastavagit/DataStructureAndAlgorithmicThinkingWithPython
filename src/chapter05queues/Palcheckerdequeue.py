@@ -46,5 +46,5 @@ def palchecker(aString):
 
     return stillEqual
 
-print(palchecker("lsdkjfskf"))
-print(palchecker("madam"))
+print((palchecker("lsdkjfskf")))
+print((palchecker("madam")))

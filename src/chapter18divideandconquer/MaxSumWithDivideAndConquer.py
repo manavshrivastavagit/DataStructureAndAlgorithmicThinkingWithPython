@@ -21,7 +21,7 @@ def maxSumWithDivideAndConquer(A, low, hi):
 		# calculate max sequence left from mid
 		leftSum = A[pivot][2]
 		temp = 0
-		for i in xrange(pivot, low - 1, -1):
+		for i in range(pivot, low - 1, -1):
 			temp += A[i][2]
 			if temp >= leftSum:
 				l = i
@@ -29,7 +29,7 @@ def maxSumWithDivideAndConquer(A, low, hi):
 		# calculate max sequence right from mid
 		rightSum = A[pivot + 1][2]
 		temp = 0
-		for i in xrange(pivot + 1, hi + 1):
+		for i in range(pivot + 1, hi + 1):
 			temp += A[i][2]
 			if temp >= rightSum:
 				r = i
@@ -45,4 +45,4 @@ def maxSumWithDivideAndConquer(A, low, hi):
 			
 list = [100, -4, -3, -10, -5, -1, -2, -2, -0, -15, -3, -5, -2, 70]	
 
-print maxSumWithDivideAndConquer(list, 0, len(list) - 1)
+print(maxSumWithDivideAndConquer(list, 0, len(list) - 1))

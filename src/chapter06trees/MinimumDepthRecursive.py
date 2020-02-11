@@ -54,4 +54,4 @@ tree.left.right = TreeNode(4)
 # tree.right.left = TreeNode(4)
 
 temp = Solution()
-print temp.minimumDepth(tree)
+print(temp.minimumDepth(tree))

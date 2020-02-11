@@ -20,7 +20,7 @@ def moveZerosToEnd(A):
 		j += 1
 	return A
 A = [7, 0, 0, 3, 0, 2, 3, 3, 6, 3]
-print A, "\n", moveZerosToEnd(A)
+print(A, "\n", moveZerosToEnd(A))
 
 def mySwap(A, i, j):
 	temp = A[i]
@@ -37,4 +37,4 @@ def moveZerosToEnd2(A):
 	return A
 
 A = [7, 0, 0, 3, 0, 2, 3, 3, 6, 3]
-print A, "\n", moveZerosToEnd2(A)
+print(A, "\n", moveZerosToEnd2(A))

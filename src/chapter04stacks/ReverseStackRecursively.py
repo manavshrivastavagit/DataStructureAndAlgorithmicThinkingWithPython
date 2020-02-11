@@ -33,6 +33,6 @@ def reverseStack(stack):
     return reverseStackRecursive(stack)
 
 
-s = Stack(range(10))
-print s
-print reverseStack(s)
+s = Stack(list(range(10)))
+print(s)
+print(reverseStack(s))

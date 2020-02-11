@@ -18,7 +18,7 @@ def frequencyCounter(A):
 		else:
 			table[element] = 0
 	for element in A:
-		print element, "--->", table[element]
+		print(element, "--->", table[element])
  
 A = [10, 1, 9, 4, 7, 6, 5, 22, 13, 2, 1]
 frequencyCounter(A)

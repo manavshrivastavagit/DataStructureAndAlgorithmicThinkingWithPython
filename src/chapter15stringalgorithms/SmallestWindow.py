@@ -26,7 +26,7 @@ def smallestWindow(INPUT, CHARS):
         decr(c)
     minLength = len(INPUT) + 1
     j = 0
-    for i in xrange(len(INPUT)):
+    for i in range(len(INPUT)):
         while nneg[0] > 0:
             if j >= len(INPUT):
                 return minLength
@@ -36,4 +36,4 @@ def smallestWindow(INPUT, CHARS):
         decr(INPUT[i])
     return minLength
     
-print  smallestWindow("ADOBECODEBANC", "ABC")
+print(smallestWindow("ADOBECODEBANC", "ABC"))

@@ -12,20 +12,20 @@
 INF = 999999999
 def printSolution(distGraph):
     string = "inf"
-    nodes = distGraph.keys()
+    nodes = list(distGraph.keys())
     for n in nodes:
-        print "%10s" % (n),
-    print "  "
+        print("%10s" % (n), end=' ')
+    print("  ")
     for i in nodes:
-        print"%s" % (i),
+        print("%s" % (i), end=' ')
         for j in nodes:
             if distGraph[i][j] == INF:
-                print "%10s" % (string),
+                print("%10s" % (string), end=' ')
             else:
-                print "%10s" % (distGraph[i][j]),
-        print" "
+                print("%10s" % (distGraph[i][j]), end=' ')
+        print(" ")
 def floydWarshall(graph):
-    nodes = graph.keys()
+    nodes = list(graph.keys())
     distance = {}
     for n in nodes:
         distance[n] = {}

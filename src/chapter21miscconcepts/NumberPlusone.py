@@ -12,18 +12,18 @@
 '''
 Given a number represented as an array of digits, plus one to the number.
 '''
-from __future__ import division
+
 import random
 
 def plus_one(digits):
-    print digits, '+ 1 =',
+    print(digits, '+ 1 =', end=' ')
     carry = 1
-    for i in reversed(xrange(len(digits))):
+    for i in reversed(range(len(digits))):
         x = digits[i]
         carry, x = divmod(x + carry, 10)
         digits[i] = x
     if carry > 0: digits.insert(0, carry)
-    print digits
+    print(digits)
     return digits
 
 if __name__ == '__main__':

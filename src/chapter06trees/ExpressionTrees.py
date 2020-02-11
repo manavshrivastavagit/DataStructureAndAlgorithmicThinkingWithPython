@@ -64,7 +64,7 @@ class ExressionTree(object):
     def __inorder_helper(self, node):
         if node:
             self.__inorder_helper(node.left)
-            print node.value
+            print(node.value)
             self.__inorder_helper(node.right)
  
     def preorder(self):
@@ -72,7 +72,7 @@ class ExressionTree(object):
          
     def __preorderUtil(self, node):
         if node:
-            print node.value
+            print(node.value)
             self.__preorderUtil(node.left)
             self.__preorderUtil(node.right)
  
@@ -83,7 +83,7 @@ class ExressionTree(object):
         if node:
             self.__postorderUtil(node.left)
             self.__postorderUtil(node.right)
-            print node.value
+            print(node.value)
  
 def buildExpressionTree(infix):
     postfix = postfixConvert(infix)
@@ -104,9 +104,9 @@ def buildExpressionTree(infix):
      
     return ExressionTree(stack.pop())
  
-print "In Order:"
+print("In Order:")
 buildExpressionTree("(5+3)*6").inorder()
-print "Post Order:"
+print("Post Order:")
 buildExpressionTree("(5+3)*6").postorder()
-print "Pre Order:"
+print("Pre Order:")
 buildExpressionTree("(5+3)*6").preorder()

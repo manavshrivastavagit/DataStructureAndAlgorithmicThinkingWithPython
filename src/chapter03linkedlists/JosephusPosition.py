@@ -24,10 +24,10 @@ def getJosephusPosition(n, m):
             self.next = next
            # method for getting the next field of the node    
         def get_next(self):
-            return self.next
+            return self.__next__
         # returns true if the node points to another node
         def has_next(self):
-                return self.next != None
+                return self.__next__ != None
     answer = []
 
     # initialize circular linked list
@@ -46,7 +46,7 @@ def getJosephusPosition(n, m):
         counter += 1
         if counter == m:
             counter = 0
-            prev.set_next(currentNode.next)
+            prev.set_next(currentNode.__next__)
             answer.append(currentNode.get_data())
         else:
             prev = currentNode
@@ -56,4 +56,4 @@ def getJosephusPosition(n, m):
     return answer
         
 
-print str(getJosephusPosition(6, 3))
+print(str(getJosephusPosition(6, 3)))

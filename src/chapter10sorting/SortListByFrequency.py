@@ -13,8 +13,8 @@ counts = {}
 
 for letter in myString:
     counts[letter] = counts.get(letter, 0) + 1
-print counts
+print(counts)
 
-sortedKeys = sorted(counts.keys(), key=lambda x: counts[x])
+sortedKeys = sorted(list(counts.keys()), key=lambda x: counts[x])
 for k in sortedKeys:
-    print k , "-->" , counts[k]
+    print(k , "-->" , counts[k])

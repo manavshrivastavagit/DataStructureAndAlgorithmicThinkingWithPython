@@ -17,6 +17,6 @@ def replaceWithNearestGreaterElement(A):
 			if A[i] < A[j]:
 				nextNearestGreater = A[j]
 				break
-		print("For the element " + str(A[i]) + ", " + str(nextNearestGreater) + " is the nearest greater element")
+		print(("For the element " + str(A[i]) + ", " + str(nextNearestGreater) + " is the nearest greater element"))
 
 replaceWithNearestGreaterElement([6, 2, 4, 1, 2, 1, 2, 2, 10])

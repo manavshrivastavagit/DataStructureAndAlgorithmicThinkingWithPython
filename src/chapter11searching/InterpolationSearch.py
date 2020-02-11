@@ -25,4 +25,4 @@ def InterpolationSearch(numbersList, value):
     return None
 
 A = [-30,-16,-9,3,10,11,18,22,54,84,105]
-print InterpolationSearch(A, -9)
+print(InterpolationSearch(A, -9))

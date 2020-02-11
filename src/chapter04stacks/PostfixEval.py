@@ -51,4 +51,4 @@ def doMath(op, op1, op2):
     else:
         return op1 - op2
 
-print(postfixEval('1 2 3 * + 5 - '))
+print((postfixEval('1 2 3 * + 5 - ')))

@@ -35,4 +35,4 @@ def kthSmallest(data, k):
             data = over
             k -= len(under) + pcount
 	
-print(kthSmallest([2, 1, 5, 234, 3, 44, 7, 6, 4, 5, 9, 11, 12, 14, 13], 5))
+print((kthSmallest([2, 1, 5, 234, 3, 44, 7, 6, 4, 5, 9, 11, 12, 14, 13], 5)))

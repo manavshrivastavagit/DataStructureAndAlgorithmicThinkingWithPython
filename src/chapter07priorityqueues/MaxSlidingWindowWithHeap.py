@@ -13,7 +13,7 @@ from collections import deque
 def MaxSlidingWindow(A, k):
     D = deque()
     res, i = [], 0
-    for i in xrange(len(A)):
+    for i in range(len(A)):
         while D and D[-1][0] <= A[i]:
             D.pop()
         D.append((A[i], i + k - 1))
@@ -21,4 +21,4 @@ def MaxSlidingWindow(A, k):
         if i == D[0][1]: D.popleft()
     return res
  
-print MaxSlidingWindow([4, 3, 2, 1, 5, 7, 6, 8, 9], 3)
+print(MaxSlidingWindow([4, 3, 2, 1, 5, 7, 6, 8, 9], 3))

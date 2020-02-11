@@ -16,4 +16,4 @@ def linear_search_count(A, data):
 	return count
 
 A = [7, 3, 6, 3, 3, 6, 7	]
-print linear_search_count(A, 7)
+print(linear_search_count(A, 7))

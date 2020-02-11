@@ -28,7 +28,7 @@ def minWindowSubstr(inputStr, pattern):
     return window
 
 
-print minWindowSubstr("XFDOYEZODEYXNZD", "XYZF")
-print minWindowSubstr("XXXYDFYFFHGKOXXFDOPPQDQPFVZZDEZ", "XZD")
-print minWindowSubstr("XXXYYYY", "XY")
-print minWindowSubstr("", "")
+print(minWindowSubstr("XFDOYEZODEYXNZD", "XYZF"))
+print(minWindowSubstr("XXXYDFYFFHGKOXXFDOPPQDQPFVZZDEZ", "XZD"))
+print(minWindowSubstr("XXXYYYY", "XY"))
+print(minWindowSubstr("", ""))

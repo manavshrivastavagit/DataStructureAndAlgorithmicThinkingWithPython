@@ -25,4 +25,4 @@ def findMinimumInRotatedSortedArray(A):
         return A[low], low
 
 A = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14]	
-print findMinimumInRotatedSortedArray(A)
+print(findMinimumInRotatedSortedArray(A))

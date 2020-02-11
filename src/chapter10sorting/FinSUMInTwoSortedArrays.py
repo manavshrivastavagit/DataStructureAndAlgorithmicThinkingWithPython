@@ -29,4 +29,4 @@ def findSumInLists(A, B, k):
 		
 A = [2, 3, 5, 7, 12, 15, 23, 32, 42]
 B = [3, 13, 13, 15, 22, 33]
-print findSumInLists(A, B, 270)
+print(findSumInLists(A, B, 270))

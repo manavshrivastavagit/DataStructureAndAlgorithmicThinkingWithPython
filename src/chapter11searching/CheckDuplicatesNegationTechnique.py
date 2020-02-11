@@ -12,7 +12,7 @@ import math
 def CheckDuplicatesNegationTechnique(A):
 	for i in range(0, len(A)):
 		if(A[abs(A[i])] < 0):
-			print("Duplicates exist:", A[i])
+			print(("Duplicates exist:", A[i]))
 			return
 		else:
 			A[abs(A[i])] *= -1

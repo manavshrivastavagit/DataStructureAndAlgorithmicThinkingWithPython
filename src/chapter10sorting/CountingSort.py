@@ -13,16 +13,16 @@ def CountingSort(A, k):
 	B = [0 for el in A]
 	C = [0 for el in range(0, k + 1)]
 
-	for i in xrange(0, k + 1):
+	for i in range(0, k + 1):
 		C[i] = 0
 
-	for j in xrange(0, len(A)):
+	for j in range(0, len(A)):
 		C[A[j]] += 1
 
-	for i in xrange(1, k + 1):
+	for i in range(1, k + 1):
 		C[i] += C[i - 1]
 
-	for j in xrange(len(A) - 1, 0 - 1, -1):
+	for j in range(len(A) - 1, 0 - 1, -1):
 		tmp = A[j]
 		tmp2 = C[tmp] - 1
 		B[tmp2] = tmp
@@ -30,7 +30,7 @@ def CountingSort(A, k):
 	return B
 	
 A = [534, 246, 933, 127, 277, 321, 454, 565, 220]
-print(CountingSort(A, 1000))
+print((CountingSort(A, 1000)))
 
 def counting_sort(A, k):
     """in-place counting sort"""
@@ -46,4 +46,4 @@ def counting_sort(A, k):
             i += 1
     return A
 
-print counting_sort( [1, 4, 7, 2, 1, 3, 2, 1, 4, 2, 3, 2, 1], 7 )
+print(counting_sort( [1, 4, 7, 2, 1, 3, 2, 1, 4, 2, 3, 2, 1], 7 ))

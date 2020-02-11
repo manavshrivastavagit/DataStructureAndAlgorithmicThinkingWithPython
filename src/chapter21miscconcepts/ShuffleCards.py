@@ -17,5 +17,5 @@ def shuffle(cards):
         max = max - 1
     return cards
 
-actual = range(1, 53)
+actual = list(range(1, 53))
 shuffle(actual)

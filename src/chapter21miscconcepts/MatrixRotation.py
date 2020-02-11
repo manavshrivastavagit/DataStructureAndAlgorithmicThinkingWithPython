@@ -11,8 +11,8 @@
 #Printing the matrix
 def print_matrix(matrix):
     for row in matrix:
-        print row
-    print
+        print(row)
+    print()
  
 #rotate the matrix by 90 degrees (clockwise) in place
 def rotate_90_degrees(matrix):
@@ -37,8 +37,8 @@ matrix =[
             [9,  10, 11, 12 ],
             [13, 14, 15, 16 ]  
         ]
-print "Input matrix:\n"
+print("Input matrix:\n")
 print_matrix(matrix)
 rotate_90_degrees(matrix)
-print "Rotated matrix by 90 degrees:\n"
+print("Rotated matrix by 90 degrees:\n")
 print_matrix(matrix)

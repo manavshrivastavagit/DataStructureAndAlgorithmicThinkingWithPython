@@ -18,5 +18,5 @@ def planting(A, K):
 				return True, A
 	return False
 
-print planting([1,0,0,0,1,0,0], 2)
-print planting([1,0,0,0,1,0,0], 3)
+print(planting([1,0,0,0,1,0,0], 2))
+print(planting([1,0,0,0,1,0,0], 3))

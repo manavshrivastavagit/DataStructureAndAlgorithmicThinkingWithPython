@@ -21,4 +21,4 @@ def logarithms(n):
 		i = i * 2
 	return count
 	
-print(logarithms(10))
+print((logarithms(10)))

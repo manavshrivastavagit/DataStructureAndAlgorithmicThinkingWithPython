@@ -26,6 +26,6 @@ def longestPalindromeSubstring(A):
                       key=lambda x:x[1] - x[0])
     return A[start:end + 1]
     
-print longestPalindromeSubstring('cabcbaabac')
-print longestPalindromeSubstring('abbaaa')
-print longestPalindromeSubstring('')    
+print(longestPalindromeSubstring('cabcbaabac'))
+print(longestPalindromeSubstring('abbaaa'))
+print(longestPalindromeSubstring(''))    

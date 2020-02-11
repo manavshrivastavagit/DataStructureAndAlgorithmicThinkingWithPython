@@ -54,5 +54,5 @@ def palindromeCheckerWithDeque(str1):
 
 str1 = 'Madam Im Adam'
 str2 = 'Buffy is a Slayer'
-print(palindromeCheckerWithDeque(str1))
-print(palindromeCheckerWithDeque(str2))
+print((palindromeCheckerWithDeque(str1)))
+print((palindromeCheckerWithDeque(str2)))

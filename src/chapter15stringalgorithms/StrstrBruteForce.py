@@ -18,4 +18,4 @@ def strstrBruteForce(str, pattern):
         if patterni == len(pattern): return i
     return -1
 
-print strstrBruteForce("xxxxyzabcdabcdefabc", "abc")
+print(strstrBruteForce("xxxxyzabcdabcdefabc", "abc"))

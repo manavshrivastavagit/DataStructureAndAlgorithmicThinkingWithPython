@@ -15,7 +15,7 @@ def ShellSort(A):
         for startposition in range(sublistcount):
             gapInsertionSort(A, startposition, sublistcount)
 
-        print("After increments of size", sublistcount, "The list is", A)
+        print(("After increments of size", sublistcount, "The list is", A))
         sublistcount = sublistcount // 2
 
 def gapInsertionSort(A, start, gap):

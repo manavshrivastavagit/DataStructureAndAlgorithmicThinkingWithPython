@@ -33,7 +33,7 @@ def computeSum(A, i1, i2, j1, j2):
 		return Aux[i2][j2] - Aux[i2][j1 - 1] - Aux[i1 - 1][j2] + Aux[i1 - 1][j1 - 1]
 
 def getMaxMatrix(A, n):
-	maxSum = -sys.maxint
+	maxSum = -sys.maxsize
 	for row1 in range (0, n):
 		for row2 in range (0, n):
 			for col1 in range (0, n):
@@ -46,4 +46,4 @@ A = [[-1, -2, -3, -4], [-5, -6, -7, -8 ], [-9, -10, -11, -12] , [-13, -14, -15, 
 n = 4
 Aux = [[0 for x in range(n)] for x in range(n)]
 preComputeMatrix(A, n)
-print getMaxMatrix(A, n)
+print(getMaxMatrix(A, n))

@@ -43,6 +43,6 @@ def findingSpans(A):
 			P = D.peek()
 		S[i] = i - P
 		D.push(i)
-	print S
+	print(S)
 
 findingSpans(['6', '3', '4', '5', '2'])

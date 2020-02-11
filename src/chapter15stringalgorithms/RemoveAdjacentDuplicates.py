@@ -23,5 +23,5 @@ def removeAdjacentDuplicates(str):
             stkptr -= 1
     stkptr += 1
     str = str[0:stkptr]
-    print str
+    print(str)
 removeAdjacentDuplicates(['6', '2', '4', '1', '2', '1', '2', '2', '1'])

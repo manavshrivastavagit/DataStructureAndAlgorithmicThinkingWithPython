@@ -18,21 +18,21 @@ class Stack(object):
 
 	def push(self, item):
 		if len(self.stk) >= self.limit:
-			print 'Stack Overflow!'
+			print('Stack Overflow!')
 		else:
 			self.stk.append(item)
-		print 'Stack after Push', self.stk
+		print('Stack after Push', self.stk)
 
 	def pop(self):
 		if len(self.stk) <= 0:
-			print 'Stack Underflow!'
+			print('Stack Underflow!')
 			return 0
 		else:
 			return self.stk.pop()
 			
 	def peek(self):
 		if len(self.stk) <= 0:
-			print 'Stack Underflow!'
+			print('Stack Underflow!')
 			return 0
 		else:
 			return self.stk[-1]
@@ -58,7 +58,7 @@ class Node:
 		self.next = next
 	# method for getting the next field of the node    
 	def get_next(self):
-		return self.next
+		return self.__next__
 	# method for setting the last field of the node
 	def setLast(self, last):
 		self.last = last
@@ -67,7 +67,7 @@ class Node:
 		return self.last	
 	# returns true if the node points to another node
 	def has_next(self):
-		return self.next != None
+		return self.__next__ != None
 
 
 class Queue(object):
@@ -87,19 +87,19 @@ class Queue(object):
 
 	def queueRear(self):
 		if self.rear is None:
-			print "Sorry, the queue is empty!"
+			print("Sorry, the queue is empty!")
 			raise IndexError
 		return self.rear.get_data()
 
 	def queueFront(self):
 		if self.front is None:
-			print "Sorry, the queue is empty!"
+			print("Sorry, the queue is empty!")
 			raise IndexError
 		return self.front.get_data()
 
 	def deQueue(self):
 		if self.rear is None:
-			print "Sorry, the queue is empty!"
+			print("Sorry, the queue is empty!")
 			raise IndexError
 		result = self.rear.get_data()
 		self.rear = self.rear.last
@@ -143,4 +143,4 @@ stk.push(5)
 stk.push(6)
 stk.push(20)
 stk.push(21)
-print checkStackPairwiseOrder(stk)
+print(checkStackPairwiseOrder(stk))

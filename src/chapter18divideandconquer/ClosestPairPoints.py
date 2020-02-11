@@ -29,7 +29,7 @@ def closestPoints(points):
     """Time complexity: O(nlogn)"""
     n = len(points)
     if n <= 1:
-        print 'Invalid input'
+        print('Invalid input')
         raise Exception
     elif n == 2:
         return (points[0], points[1])
@@ -54,7 +54,7 @@ def closestPoints(points):
         mid = (points[n / 2].x + points[n / 2 + 1].x) / 2
 
         # Find all points fall in [mid - d, mid + d]
-        midRange = filter(lambda pt : pt.x >= mid - d and pt.x <= mid + d, points)
+        midRange = [pt for pt in points if pt.x >= mid - d and pt.x <= mid + d]
         # Sort by y axis.
         midRange = sorted(midRange, key=operator.attrgetter('y'))
 
@@ -62,9 +62,9 @@ def closestPoints(points):
         localMin = None
         # Brutal force, for each point, find another point and delta y less than d.
         # Calc the distance and update the global var if hits the condition.
-        for i in xrange(len(midRange)):
+        for i in range(len(midRange)):
             a = midRange[i]
-            for j in xrange(i + 1, len(midRange)):
+            for j in range(i + 1, len(midRange)):
                 b = midRange[j]
                 if (not ret) or (abs(a.y - b.y) <= d and distance(a, b) < localMin):
                         ret = (a, b)
@@ -76,4 +76,4 @@ def closestPoints(points):
 points = [ Point(1, 2), Point(0, 0), Point(3, 6), Point(4, 7), Point(5, 5),
         Point(8, 4), Point(2, 9), Point(4, 5), Point(8, 1), Point(4, 3),
         Point(3, 3)]
-print closestPoints(points)
+print(closestPoints(points))

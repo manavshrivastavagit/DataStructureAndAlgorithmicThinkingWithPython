@@ -27,15 +27,15 @@ class Node:
         self.next = next
        # method for getting the next field of the node    
     def get_next(self):
-        return self.next
+        return self.__next__
     # returns true if the node points to another node
     def has_next(self):
-            return self.next != None
+            return self.__next__ != None
 	    
 def _splitList(head):
     fast = head
     slow = head
-    while fast and fast.next:
+    while fast and fast.__next__:
         slow = slow.get_next()
         fast = fast.get_next()
         fast = fast.get_next()
@@ -77,7 +77,7 @@ class Solution:
     # @param head, a ListNode
     # @return nothing
     def reorderList(self, head):
-        if not head or not head.next:
+        if not head or not head.__next__:
             return
         a, b = _splitList(head)
         b = _reverseList(b)

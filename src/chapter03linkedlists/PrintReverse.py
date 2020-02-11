@@ -17,7 +17,7 @@ class ListNode:
         return self.data
 
     def get_next(self):
-        return self.next
+        return self.__next__
 
     def set_data(self, value):
         self.data = value

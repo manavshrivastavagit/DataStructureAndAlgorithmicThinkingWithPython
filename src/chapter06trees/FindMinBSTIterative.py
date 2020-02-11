@@ -196,7 +196,7 @@ def inorderRecursive(root):
 	if not root:
 		return
 	inorderRecursive(root.left)
-	print root.data
+	print(root.data)
 	inorderRecursive(root.getRight())
 
 def findMinIterative(root):
@@ -216,4 +216,4 @@ root.insert(5)
 # inorderRecursive(root)
 root.insert(2)
 # inorderRecursive(root)
-print findMinIterative(root)
+print(findMinIterative(root))

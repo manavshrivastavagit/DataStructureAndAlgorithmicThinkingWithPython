@@ -30,11 +30,11 @@ class Queue(object):
 		else:
 			self.rear = self.size
 		self.size += 1
-		print 'Queue after enQueue', self.que
+		print('Queue after enQueue', self.que)
 		
 	def deQueue(self):
 		if self.size <= 0:
-			print 'Queue Underflow!'
+			print('Queue Underflow!')
 			return 0
 		else:
 			self.que.pop(0)
@@ -43,17 +43,17 @@ class Queue(object):
 				self.front = self.rear = None	
 			else:
 				self.rear = self.size - 1
-			print 'Queue after deQueue', self.que
+			print('Queue after deQueue', self.que)
 			
 	def queueRear(self):
 		if self.rear is None:
-			print "Sorry, the queue is empty!"
+			print("Sorry, the queue is empty!")
 			raise IndexError
 		return self.que[self.rear]
 
 	def queueFront(self):
 		if self.front is None:
-			print "Sorry, the queue is empty!"
+			print("Sorry, the queue is empty!")
 			raise IndexError
 		return self.que[self.front]
 			
@@ -67,26 +67,26 @@ class Queue(object):
 
 que = Queue()
 que.enQueue("first")
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())
 que.enQueue("second")
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())
 que.enQueue("third")
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())
 que.enQueue("four")
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())
 que.enQueue("five")
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())
 que.enQueue("six")
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())
 que.deQueue()
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())
 que.deQueue()
-print "Front: " + que.queueFront()
-print "Rear: " + que.queueRear()
+print("Front: " + que.queueFront())
+print("Rear: " + que.queueRear())

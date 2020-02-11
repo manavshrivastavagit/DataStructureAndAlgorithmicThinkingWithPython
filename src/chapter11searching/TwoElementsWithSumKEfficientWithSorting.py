@@ -22,4 +22,4 @@ def pair_sum_k_sorting(A, K):
     
 A = [1, 4, 45, 6, 10, -8]
 A.sort()
-print pair_sum_k_sorting(A, 11)
+print(pair_sum_k_sorting(A, 11))

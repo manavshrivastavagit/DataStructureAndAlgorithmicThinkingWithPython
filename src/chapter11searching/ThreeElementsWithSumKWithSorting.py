@@ -16,9 +16,9 @@ def threeElementsWithSumKWithSorting(A, K):
 		left = i + 1
 		right = n - 1
 		while(left < right):
-			print A[i] + A[left] + A[right], K
+			print(A[i] + A[left] + A[right], K)
 			if(A[i] + A[left] + A[right] == K):
-				print "yes-->", A[i], " + ", A[left], " + ", A[right], " = ", K		
+				print("yes-->", A[i], " + ", A[left], " + ", A[right], " = ", K)		
 				return 1
 			elif(A[i] + A[left] + A[right] < K):
 				left += 1
@@ -28,4 +28,4 @@ def threeElementsWithSumKWithSorting(A, K):
     
 A = [1, 6, 45, 4, 10, 18]
 A.sort()
-print threeElementsWithSumKWithSorting(A, 23)
+print(threeElementsWithSumKWithSorting(A, 23))

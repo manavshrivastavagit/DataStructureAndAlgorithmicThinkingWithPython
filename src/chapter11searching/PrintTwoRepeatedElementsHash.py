@@ -20,7 +20,7 @@ def PrintTwoRepeatedElementsHash(A):
 
 	for element in A:
 		if table[element] == 2:
-			print element
+			print(element)
 			
 A = [3, 5, 7, 4, 2, 4, 2, 1, 9]
 PrintTwoRepeatedElementsHash(A)

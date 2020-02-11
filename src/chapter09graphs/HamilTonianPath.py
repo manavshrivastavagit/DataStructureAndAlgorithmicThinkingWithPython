@@ -44,7 +44,7 @@ class Graph(object):
         a hamiltonian path, or None if not found
         ''' 
         if pending is None:
-            pending = self.vList.values()
+            pending = list(self.vList.values())
  
         result = None
  
@@ -82,4 +82,4 @@ if __name__ == '__main__':
     G.add(9, 2, 3, 11)
     G.add(10, 3, 4, 11)
     G.add(11, 1, 9, 10, 5)
-    print G.hamiltonian()
+    print(G.hamiltonian())

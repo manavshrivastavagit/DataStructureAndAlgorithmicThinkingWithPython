@@ -34,7 +34,7 @@ class Hash:
                 self.str = text
                 self.hash = 0
 
-                for i in xrange(0, size):
+                for i in range(0, size):
                         self.hash += ord(self.str[i])
 
                 self.init = 0
@@ -53,4 +53,4 @@ class Hash:
         def text(self):
                 return self.str[self.init:self.end]		
                 
-print RobinKarp("3141592653589793", "26")                
+print(RobinKarp("3141592653589793", "26"))                

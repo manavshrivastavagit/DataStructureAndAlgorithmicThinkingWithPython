@@ -19,7 +19,7 @@ def recursivePermutations(elems, soFar):
 	
 def permutations(elems):
 	for perm in recursivePermutations(elems, []):
-		print perm		
+		print(perm)		
 		
 elems = [1, 2, 3]
 permutations(elems)

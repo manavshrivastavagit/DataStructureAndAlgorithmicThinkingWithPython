@@ -69,12 +69,12 @@ def findDeletedElement7(A, B):
 	return result^A[len(A)-1]
  
 A=[3,6,8,4,5,2,2,3]
-print "Original A-->", A
+print("Original A-->", A)
 random.shuffle(A)
-print "A after shuffle-->", A
+print("A after shuffle-->", A)
 B=A[1:]
-print "Original B-->", B
+print("Original B-->", B)
 random.shuffle(B)
-print "B after shuffle-->", B
+print("B after shuffle-->", B)
 #print findDeletedElement6(A, B)
-print findDeletedElement7(A, B)
+print(findDeletedElement7(A, B))

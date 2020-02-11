@@ -8,7 +8,7 @@ def LCS(X, Y):
         # Use key=len to select the maximum string in a list efficiently
         return max(LCS (X, n), LCS(m, Y), key=len)
 
-print "Longest common subsequence: ", LCS('ABCBDAB', 'BDCABA')
+print("Longest common subsequence: ", LCS('ABCBDAB', 'BDCABA'))
 
 def LCS_length(X, Y):
     if not X or not Y:
@@ -20,4 +20,4 @@ def LCS_length(X, Y):
         # Use key=len to select the maximum string in a list efficiently
         return max(LCS_length(X, n), LCS_length(m, Y))
 
-print "Longest common subsequence length: ", LCS_length('ABCBDAB', 'BDCABA')
+print("Longest common subsequence length: ", LCS_length('ABCBDAB', 'BDCABA'))

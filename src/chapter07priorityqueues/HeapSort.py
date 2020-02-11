@@ -44,5 +44,5 @@ def swap(A, x, y):
   A[y] = temp
 
 A = [534, 246, 933, 127, 277, 321, 454, 565, 220]
-print(heapSort(A))
-print A
+print((heapSort(A)))
+print(A)

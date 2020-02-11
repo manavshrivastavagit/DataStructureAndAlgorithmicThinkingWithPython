@@ -19,9 +19,9 @@ def checkDuplicates(A):
 		for j in range(i+1, len(A)):
 			c += 1
 			if (A[i] == A[j]):
-				print c
+				print(c)
 				return True
-	print c
+	print(c)
 	return False
  
 def checkDuplicates2(A):
@@ -35,9 +35,9 @@ def checkDuplicates2(A):
 			if (i ==j):
 				continue
 			if (A[i] == A[j]):
-				print c
+				print(c)
 				return True
-	print c
+	print(c)
 	return False
  
 def checkDuplicates3(A):
@@ -51,16 +51,16 @@ def checkDuplicates3(A):
 	for i in range(len(A)):
 		c += 1
 		if (A[i] == A[i+1]):
-			print c
+			print(c)
 			return True
-	print c
+	print(c)
 	return False
  
 def checkDuplicates4(A):
 	h = defaultdict(int) # default value of int is 0
 	for element in A:
 		if (h[element] == 1):
-			print h.items()
+			print(list(h.items()))
 			return True
 		else:
 			h[element] = 1
@@ -85,5 +85,5 @@ def checkDuplicates5(A):
 #print checkDuplicates5([1,2,3,4,5,6,7,6])
 #print checkDuplicates5([0,1,2,3,4,5,6])
 #print checkDuplicates5([3,2,1,2,2,3])
-print checkDuplicates5([3,2,1,2,2,-3])
+print(checkDuplicates5([3,2,1,2,2,-3]))
  

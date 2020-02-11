@@ -30,7 +30,7 @@ def InorderTraversal(root):
 	P = InorderSuccessor(root)
 	while(P != root):
 		P = InorderSuccessor(P)
-		print P.data
+		print(P.data)
 
 def InorderTraversal(root):
 	P = root
@@ -38,7 +38,7 @@ def InorderTraversal(root):
 		P = InorderSuccessor(P)
 		if(P == root):
 			return
-		print P.data
+		print(P.data)
 		
 def PreorderSuccessor(P):
 	if(P.LTag == 1): 
@@ -53,7 +53,7 @@ def PreorderTraversal(root):
 	P = PreorderSuccessor(root)
 	while(P != root) :
 		P = PreorderSuccessor(P)
-		print P.data
+		print(P.data)
       
 def PreorderTraversal(root) :
 	P = root
@@ -61,7 +61,7 @@ def PreorderTraversal(root) :
 		P = PreorderSuccessor(P)
 		if(P == root): 
 			return
-		print P.data
+		print(P.data)
       
 # pre-order successor for an unthreaded binary tree
 def PreorderSuccessor(node): 

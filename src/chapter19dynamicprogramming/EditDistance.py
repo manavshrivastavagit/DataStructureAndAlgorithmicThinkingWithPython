@@ -22,4 +22,4 @@ def editDistance(A, B):
 
     return table[i, j]
 
-print(editDistance("Helloworld", "HalloWorld"))
+print((editDistance("Helloworld", "HalloWorld")))

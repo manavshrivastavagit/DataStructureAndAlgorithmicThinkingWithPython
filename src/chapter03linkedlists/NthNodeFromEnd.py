@@ -16,7 +16,7 @@ def nthNodeFromEnd(self, n):
     temp = self.head
     count = 0
     while count < n and None != temp:
-      temp = temp.next
+      temp = temp.__next__
       count += 1
  
     # if the LinkedList does not contain k elements, return None
@@ -26,8 +26,8 @@ def nthNodeFromEnd(self, n):
     # keeping tab on the nth element from temp, slide temp until
     # temp equals self.tail. Then return the nth element.
     nth = self.head
-    while None != temp.next:
-      temp = temp.next
-      nth = nth.next
+    while None != temp.__next__:
+      temp = temp.__next__
+      nth = nth.__next__
  
     return nth

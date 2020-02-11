@@ -62,7 +62,7 @@ def majority5(A):
 			count -= 1
 	return element, count
 
-print majority5([1,2,3])
+print(majority5([1,2,3]))
 #print majority5([3,2,1,3,1,3,3,3,4,4,4,4])
 #print majority5([3,2,1,3,1,3,3,3])
 #print majority5([3,2,3,3,1,3,3,3,4,4,4,4,4])

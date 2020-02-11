@@ -22,4 +22,4 @@ def Knapsack(knapsackSize, itemsValue, itemsWeight):
  
 	return M[numItems - 1][knapsackSize]
 	
-print Knapsack(50, [60, 100, 120], [10, 20, 30])	
+print(Knapsack(50, [60, 100, 120], [10, 20, 30]))	

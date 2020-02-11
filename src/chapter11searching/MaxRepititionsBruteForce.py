@@ -19,7 +19,7 @@ def MaxRepititionsBruteForce(A):
 		if max < count:
 			max = count
 			maxRepeatedElement = A[i]
-	print maxRepeatedElement, "repeated for ", max
+	print(maxRepeatedElement, "repeated for ", max)
 
 A = [3, 2, 1, 2, 2, 3, 2, 1, 3]
 MaxRepititionsBruteForce(A)

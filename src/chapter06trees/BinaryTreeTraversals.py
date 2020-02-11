@@ -108,7 +108,7 @@ def levelOrder (root):
 	Q.enQueue(root)
 	while(not Q.isEmpty()):
 		temp = Q.deQueue()
-		print temp.data
+		print(temp.data)
 		if(temp.left):
 			Q.enQueue(temp.left)
 		if(temp.right): 

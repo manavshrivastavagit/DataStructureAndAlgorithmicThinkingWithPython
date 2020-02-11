@@ -14,7 +14,7 @@ def sorting012sDutchFlagProblem(A):
     # Write 1 at the beginning; 2 at the end.
     cur = 0
     while cur <= two:
-        print cur, A, zero, two
+        print(cur, A, zero, two)
         if A[cur] == 0:
             if cur > zero:
                 A[zero], A[cur] = A[cur], A[zero]
@@ -32,7 +32,7 @@ def sorting012sDutchFlagProblem(A):
                 break
         else:
             cur += 1
-    print A, '\n'
+    print(A, '\n')
     return A
 
 if __name__ == '__main__':

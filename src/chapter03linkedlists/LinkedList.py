@@ -25,10 +25,10 @@ class Node:
         self.next = next
        # method for getting the next field of the node    
     def get_next(self):
-        return self.next
+        return self.__next__
     # returns true if the node points to another node
     def has_next(self):
-            return self.next != None
+            return self.__next__ != None
 
 # class for defining a linked list   
 class LinkedList(object):
@@ -58,16 +58,16 @@ class LinkedList(object):
         newNode = node
         currentnode = self.head
          
-        while currentnode.next != None or currentnode.data != data:
+        while currentnode.__next__ != None or currentnode.data != data:
             if currentnode.data == data:
-                newNode.next = currentnode.next
+                newNode.next = currentnode.__next__
                 currentnode.next = newNode
                 self.length = self.length + 1
                 return
             else:
-                currentnode = currentnode.next
+                currentnode = currentnode.__next__
                  
-        print "The data provided is not present"
+        print("The data provided is not present")
                  
     # method to add a node at a particular position
     def addAtPos(self, pos, node):
@@ -76,9 +76,9 @@ class LinkedList(object):
         previousnode = self.head
          
         if pos > self.length or pos < 0:
-            print "The position does not exist. Please enter a valid position"
+            print("The position does not exist. Please enter a valid position")
         else:
-            while currentnode.next != None or count < pos:
+            while currentnode.__next__ != None or count < pos:
                 count = count + 1
                 if count == pos:
                     previousnode.next = node
@@ -88,7 +88,7 @@ class LinkedList(object):
                      
                 else:
                     previousnode = currentnode
-                    currentnode = currentnode.next
+                    currentnode = currentnode.__next__
          
          
                  
@@ -96,8 +96,8 @@ class LinkedList(object):
     def addLast(self, node):
         currentnode = self.head
          
-        while currentnode.next != None:
-            currentnode = currentnode.next
+        while currentnode.__next__ != None:
+            currentnode = currentnode.__next__
  
         newNode = node
         newNode.next = None
@@ -108,23 +108,23 @@ class LinkedList(object):
     # method to delete the first node of the linked list
     def deleteBeg(self):
         if self.length == 0:
-            print "The list is empty"
+            print("The list is empty")
         else:
-            self.head = self.head.next
+            self.head = self.head.__next__
             self.length -= 1
      
     # method to delete the last node of the linked list
     def deleteLast(self):
          
         if self.length == 0:
-            print "The list is empty"
+            print("The list is empty")
         else:
             currentnode = self.head
             previousnode = self.head
              
-            while currentnode.next != None:
+            while currentnode.__next__ != None:
                 previousnode = currentnode
-                currentnode = currentnode.next
+                currentnode = currentnode.__next__
                  
             previousnode.next = None
              
@@ -136,17 +136,17 @@ class LinkedList(object):
         currentnode = self.head
         previousnode = self.head
          
-        while currentnode.next != None or currentnode.data != data:
+        while currentnode.__next__ != None or currentnode.data != data:
             if currentnode.data == data:
-                previousnode.next = currentnode.next
+                previousnode.next = currentnode.__next__
                 self.length -= 1
                 return
                     
             else:
                 previousnode = currentnode
-                currentnode = currentnode.next
+                currentnode = currentnode.__next__
                  
-        print "The data provided is not present"
+        print("The data provided is not present")
                  
          
          
@@ -157,21 +157,21 @@ class LinkedList(object):
         previousnode = self.head
  
         if pos > self.length or pos < 0:
-            print "The position does not exist. Please enter a valid position"
+            print("The position does not exist. Please enter a valid position")
         # to deletle the first position of the linkedlist
         elif pos == 1:
             self.delete_beg()
             self.length -= 1
         else:        
-            while currentnode.next != None or count < pos:
+            while currentnode.__next__ != None or count < pos:
                 count = count + 1
                 if count == pos:
-                    previousnode.next = currentnode.next
+                    previousnode.next = currentnode.__next__
                     self.length -= 1
                     return
                 else:
                     previousnode = currentnode
-                    currentnode = currentnode.next
+                    currentnode = currentnode.__next__
                      
              
  
@@ -183,7 +183,7 @@ class LinkedList(object):
     # returns the first element of the list
     def getFirst(self):
         if self.length == 0:
-            print "The list is empty"
+            print("The list is empty")
         else:
             return self.head.data
      
@@ -191,12 +191,12 @@ class LinkedList(object):
     def getLast(self):
          
         if self.length == 0:
-            print "The list is empty"
+            print("The list is empty")
         else:
             currentnode = self.head
              
-            while currentnode.next != None:
-                currentnode = currentnode.next
+            while currentnode.__next__ != None:
+                currentnode = currentnode.__next__
                  
             return currentnode.data
      
@@ -206,14 +206,14 @@ class LinkedList(object):
         currentnode = self.head
          
         if pos > self.length or pos < 0:
-            print "The position does not exist. Please enter a valid position"
+            print("The position does not exist. Please enter a valid position")
         else:
-            while currentnode.next != None or count < pos:
+            while currentnode.__next__ != None or count < pos:
                 count = count + 1
                 if count == pos:
                     return currentnode.data
                 else:
-                    currentnode = currentnode.next
+                    currentnode = currentnode.__next__
  
                      
     # method to print the whole list
@@ -222,9 +222,9 @@ class LinkedList(object):
         currentnode = self.head
         while currentnode != None:
             nodeList.append(currentnode.data)
-            currentnode = currentnode.next 
+            currentnode = currentnode.__next__ 
              
-        print nodeList  
+        print(nodeList)  
 
 node1 = Node(1)
 node2 = Node(2)

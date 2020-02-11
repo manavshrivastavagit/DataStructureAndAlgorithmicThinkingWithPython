@@ -14,4 +14,4 @@ def Fibo(n):
 		a, b = b, a + b
 	return a
       
-print(Fibo(10))	  
+print((Fibo(10)))	  

@@ -16,5 +16,5 @@ for x in A:
         unique.append(x)
         helperSet.add(x)
 
-print A	
-print unique
+print(A)	
+print(unique)

@@ -12,7 +12,7 @@
 def SkyLineBruteForce():
     auxHeights = [0]*1000
     rightMostBuildingRi=0
-    p = raw_input("Enter three values:  ") # raw_input() function
+    p = input("Enter three values:  ") # raw_input() function
     inputValues = p.split()  
     inputCount = len(inputValues)
     while inputCount==3:
@@ -25,15 +25,15 @@ def SkyLineBruteForce():
         if(rightMostBuildingRi<right):
                     rightMostBuildingRi=right
         
-        p = raw_input("Enter three values:  ") # raw_input() function
+        p = input("Enter three values:  ") # raw_input() function
         inputValues = p.split()  
         inputCount = len(inputValues)
 
     prev = 0
     for i in range(1,rightMostBuildingRi-1):
         if prev!=auxHeights[i]:
-            print i, " ", auxHeights[i]
+            print(i, " ", auxHeights[i])
         prev=auxHeights[i]
-    print rightMostBuildingRi, " ", auxHeights[rightMostBuildingRi]
+    print(rightMostBuildingRi, " ", auxHeights[rightMostBuildingRi])
 
 SkyLineBruteForce()

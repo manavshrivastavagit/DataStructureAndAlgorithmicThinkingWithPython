@@ -19,10 +19,10 @@ class Node:
 def printBST(root):
  '''prints the BST in an inorder sequence'''
  if root.left == root or root.right == root:
-     print root.data, " ",
+     print(root.data, " ", end=' ')
  else:
      printBST(root.left)
-     print root.data, " ",
+     print(root.data, " ", end=' ')
      printBST(root.right)
 
 def printList(head):
@@ -30,19 +30,19 @@ def printList(head):
   to test whether both the 'next' and 'previous' pointers are fine'''
  # print forward direction
  h = head
- print '[%d]' % (h.data),
+ print('[%d]' % (h.data), end=' ')
  h = h.right
  while h != head:
-     print '[%d]' % (h.data),
+     print('[%d]' % (h.data), end=' ')
      h = h.right
 
- print ""
+ print("")
  # print in reverse direction
  h = head.left
- print '[%d]' % (h.data),
+ print('[%d]' % (h.data), end=' ')
  h = h.left
  while h != head.left:
-     print '[%d]' % (h.data),
+     print('[%d]' % (h.data), end=' ')
      h = h.left
 
 
@@ -104,6 +104,6 @@ if __name__ == "__main__":
  c.right = f
 
  printBST(root)
- print "\ncreating to double linked list"
+ print("\ncreating to double linked list")
  head = BSTToDLL(root);
  printList(head)

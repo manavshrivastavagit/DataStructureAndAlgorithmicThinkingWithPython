@@ -21,4 +21,4 @@ def separateEvenOdd(A):
 			right -= 1
 A = [12, 34, 45, 9, 8, 90, 3]
 separateEvenOdd(A)
-print A
+print(A)

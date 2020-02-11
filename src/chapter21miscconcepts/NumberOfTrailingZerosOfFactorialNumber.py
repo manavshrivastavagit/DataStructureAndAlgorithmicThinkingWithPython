@@ -18,4 +18,4 @@ def number_of_trailing_zeros_of_factorial_number(n):
 		i *= 5
 	return count
 
-print number_of_trailing_zeros_of_factorial_number(100)
+print(number_of_trailing_zeros_of_factorial_number(100))

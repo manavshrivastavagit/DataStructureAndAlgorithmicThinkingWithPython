@@ -21,7 +21,7 @@ def printBST(root):
      return
  else:
      printBST(root.left)
-     print root.data, " ",
+     print(root.data, " ", end=' ')
      printBST(root.right)
 
 def printList(head):
@@ -29,22 +29,22 @@ def printList(head):
   to test whether both the 'next' and 'previous' pointers are fine'''
  if not head:
      return  
- if head: print head.data    
+ if head: print(head.data)    
  # print forward direction
  h = head
- print '[%d]' % (h.data),
+ print('[%d]' % (h.data), end=' ')
  h = h.right
  while h != head:
-     print '[%d]' % (h.data),
+     print('[%d]' % (h.data), end=' ')
      h = h.right
 
- print ""
+ print("")
  # print in reverse direction
  h = head.left
- print '[%d]' % (h.data),
+ print('[%d]' % (h.data), end=' ')
  h = h.left
  while h != head.left:
-     print '[%d]' % (h.data),
+     print('[%d]' % (h.data), end=' ')
      h = h.left
 
 
@@ -93,6 +93,6 @@ if __name__ == "__main__":
 
  printBST(root)
 
- print "\ncreating to double linked list"
+ print("\ncreating to double linked list")
  head = BSTToDLL(root)
  printList(head)

@@ -23,4 +23,4 @@ def CountTrees(n) :
 
 		return(sum)
 for i  in range(1, 11):
-	print CountTrees(i)
+	print(CountTrees(i))

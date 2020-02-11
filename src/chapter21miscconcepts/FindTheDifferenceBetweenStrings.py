@@ -47,8 +47,8 @@ def findTheDifference5(s, t):
     for i in range(len(t)):
         c = c ^ ord(t[i])
     return chr(c)
-print (findTheDifference1("abcd","baedc"))
-print (findTheDifference2("abcd","baedc"))
-print (findTheDifference3("abcd","baedc"))
-print (findTheDifference4("abcd","baedc"))
-print (findTheDifference5("abcd","baedc"))
+print((findTheDifference1("abcd","baedc")))
+print((findTheDifference2("abcd","baedc")))
+print((findTheDifference3("abcd","baedc")))
+print((findTheDifference4("abcd","baedc")))
+print((findTheDifference5("abcd","baedc")))

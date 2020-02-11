@@ -21,7 +21,7 @@ def Bridges(G, u) :
 		if(G.adjMatrix[u][v] and dfsnum[v] == -1):
 			cutVertices(v)
 			if(low[v] > dfsnum[u]):
-				print (u, v)  # as a bridge
+				print((u, v))  # as a bridge
 			low[u] = min (low[u] , low[v])
 		else:  # (u,v) is a back edge
 			low[u ] = min(low[u] , dfsnum[v])

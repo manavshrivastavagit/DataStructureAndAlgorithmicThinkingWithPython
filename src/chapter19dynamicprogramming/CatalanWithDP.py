@@ -15,4 +15,4 @@ def CatalanNumber(n):
                 catalan[i] += catalan[j] * catalan[i - j - 1]
         return catalan[n]
 
-print CatalanNumber(4)  
+print(CatalanNumber(4))  

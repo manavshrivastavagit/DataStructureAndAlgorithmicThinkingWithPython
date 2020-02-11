@@ -17,7 +17,7 @@ def counting_number_of_ones_in_1_to_N(n):
         while(j):
             count += 1
             j &= j - 1
-    print count
+    print(count)
 
 n = 2
 counting_number_of_ones_in_1_to_N(n)
